@@ -18,8 +18,8 @@ section {
   padding: 60px 100px 60px 100px;
 }
 
-.bg-gray {
-	background-color: lightgray;
+.bg-grey {
+	background-color: #D5D5D5;
 }
 
 .bg-slategrey {
@@ -31,16 +31,23 @@ section {
 }
 
 .profilepic {
-	max-height: 300px;
-	max-width: 300px;
+	max-height: 250px;
+	max-width: 200px;
 	float: left;
-    padding: 0px 20px 0px 0px;
+    padding: 10px 15px 10px 10px;
+	border-radius: 40px;
+
 }
+
 
 .tallsection {
 	padding-top: 200px;
 	padding-bottom: 200px;
 	background-color: lightsteelblue;
+}
+
+.lefttext {
+	float: right;
 }
 
 
