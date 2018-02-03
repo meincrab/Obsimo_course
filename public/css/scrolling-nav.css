@@ -15,39 +15,69 @@ header {
 }
 
 section {
-  padding: 60px 100px 60px 100px;
+  padding: 50px 0px 60px 0px;
 }
 
-.bg-grey {
-	background-color: #D5D5D5;
+.topsection {
+    margin-top: 300px;
+    padding: 25px 15px 15px 15px;
 }
 
-.bg-slategrey {
-	background-color: slategrey;
+.topmrg {
+    margin-top: 220px;
+}
+
+.opacitybox {
+    padding: 20px;
+    background-color: #9badcc;
+    opacity: 0.9;
+    border-radius: 50px;
+}
+
+.bg-myblue {
+    background-color: #9badcc;
+}
+
+.bg-bluegray {
+    background-color: #ebebf4;
 }
 
 .bg-lightsteelblue {
-	background-color: lightsteelblue;
+	background-color: ghostwhite;
 }
 
 .profilepic {
 	max-height: 250px;
-	max-width: 200px;
+	max-width: 250px;
 	float: left;
     padding: 10px 15px 10px 10px;
-	border-radius: 40px;
-
+	border-radius: 50px;
 }
 
 
 .tallsection {
 	padding-top: 200px;
 	padding-bottom: 200px;
-	background-color: lightsteelblue;
 }
 
 .lefttext {
 	float: right;
 }
+
+.overbg {
+    height: auto;
+    width: auto;
+    padding: 50px 0px 50px 0px;
+}
+.bg-main {
+  	background-image: url(../img/dyna.jpg);
+    height: auto;
+    width: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
