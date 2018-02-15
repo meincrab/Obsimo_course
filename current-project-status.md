@@ -1,15 +1,14 @@
 # Tilanne
 
-* Päivämäärä: 1.2.2018
+* Päivämäärä: 15.2.2018
 * Ryhmä: gg
-* Tehdyt työtunnit: 82h
-* Tämän hetkinen lasku: 4100€ 
+* Tehdyt työtunnit: 164h
+* Tämän hetkinen lasku: 8200€ 
 
 
 # Miten homma etenee / Current Progress
 
 * Vaatimusmääritelmä ja projektisuunnitelma ovat työnalla.
-* Ryhmän Kotisivu vaatii tekstiä
 
 ## Ongelmakohdat / Problems ahead 
 
