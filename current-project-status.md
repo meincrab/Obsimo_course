@@ -1,6 +1,6 @@
 # Tilanne
 
-* Päivämäärä: 15.2.2018
+* Päivämäärä: 16.2.2018
 * Ryhmä: gg
 * Tehdyt työtunnit: 164h
 * Tämän hetkinen lasku: 8200€ 
