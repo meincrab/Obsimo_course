@@ -1,6 +1,6 @@
 ### OBSIMO projekti, tärkeät linkit
 
-[Projektin wiki](https://gitlab.labranet.jamk.fi/TTOS0800-TTOS0900/esimerkki-projekti-v1/wikis/home)
+[Projektin wiki](https://gitlab.labranet.jamk.fi/PRJTEAM-G/gg/wikis/home)
 
 [Projektiryhmän verkkosivu](http://prjteam-g.pages.labranet.jamk.fi/gg/)
 
