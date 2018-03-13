@@ -1,24 +1,24 @@
 # Tilanne
 
-* Päivämäärä: 16.2.2018
+* Päivämäärä: 13.3.2018
 * Ryhmä: gg
-* Tehdyt työtunnit: 164h
-* Tämän hetkinen lasku: 8200€ 
+* Tehdyt työtunnit: 232h
+* Tämän hetkinen lasku: 11600€ 
 
 
 # Miten homma etenee / Current Progress
 
-* Vaatimusmääritelmä ja projektisuunnitelma ovat työnalla.
+* Etappi 1 asiat tehty(vaatii vielä varmistusta).
 
 ## Ongelmakohdat / Problems ahead 
 
-* Yrityksen sisäänkirjautuminen.
+* Robotframework
 
 ## Mitä seuraavaksi / What next
 
-* Arkkitehtuurinsuunnitelma.
+* Koodia, testausta, kyyneliä ja verta.
 
 ### Tärkeitä linkkejä / Useful links 
 
 * [Kotisivu](http://prjteam-g.pages.labranet.jamk.fi/gg/)
-* [mock-up](https://www.fluidui.com/editor/live/preview/cF84VDhBa2VIWnJWOTViZ21SZndRaXhJUWNnTTFLeWhFeg==)
+* [mock-up](https://ninjamock.com/s/RHBQWRx)
