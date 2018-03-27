@@ -13,7 +13,7 @@
 
 ## Ongelmakohdat / Problems ahead 
 
-* Ryhmätyöskentely, työympäristöjen käyttö.
+* Ryhmätyöskentely, työympäristöjen käyttö, sairastelut.
 
 ## Mitä seuraavaksi / What next
 
