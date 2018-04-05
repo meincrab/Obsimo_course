@@ -1,0 +1,113 @@
+/* CSS STYLES */
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
+                                    {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
+
+
+body    								{background:url(../images/bg.png) repeat-x #FFFFFF; font-size:12px;	font-family:'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif; color:#000000; font: inherit;  }
+a:focus 								{outline:1px dotted;}
+a   									{color:#717171; text-decoration:none;}
+a:hover 								{text-decoration:none;}
+a span  								{font-size:90%;}
+h1  									{font-size:30px;}
+h2  									{font-size:23px;}
+ol  									{list-style:decimal;}
+ul  									{list-style:disc;}
+li  									{margin-left:20px; position:relative;}
+p, li, dl   							{line-height:18px;font-size:14px; font-family:'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif;}
+p, dl, hr, h1, h2, ol, ul, pre, table, address, fieldset, img
+                                        {margin-bottom:20px;}
+#wrapper    							{margin-top:7px;}
+
+ol  									{padding: 0 0 0 5px;}
+	
+/* Mitat */
+
+.box    						        {margin-left:auto; margin-right:auto; width:1040px;}
+.float  								{display:inline; float:left; position:relative;}
+	
+.grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6
+                                        {display:inline; float:left; position:relative; margin-left:20px; margin-right:0px; }
+	
+.box .grid_1        				    {width:430px;}
+.box .grid_2        				    {width:550px;}
+.box .grid_3         				    {width:1000px;}
+.box .grid_4         				    {width:215px;}
+.box .grid_5        				    {width:765px;}
+.box .grid_6        				    {width:500px; margin-left: 0px;}
+	
+
+/* Logo */
+
+h1#logo                                 {font-size:48px; font-weight:normal; margin-top:30px; color:#000000; }
+
+/* Navigaatio */
+
+	ul#navigaatio						{text-transform:uppercase;}
+	ul#navigaatio li 					{float:right; display:inline; margin : 0 0 0 50px;}
+	ul#navigaatio li a					{font-family:arial, sans-serif !important; display:block; padding:44px 0 0; text-decoration:none; color:#000000; font-size:14px; font-weight:bold; }
+	ul#navigaatio li a:hover, ul#navigaatio li a.current
+                                        {background:url(../images/triangle.gif) no-repeat center top;}
+
+
+/* Erilaisia */
+    .meta								{font-weight:normal;font-family:'Lucida Grande', 'Lucida Sans Unicode', Tahoma, Arial, san-serif; font-size:11px; color:#999999 !important; line-height:44px; text-transform:none; text-shadow:none;}
+    .hr									{border:none; border-bottom:1px solid #f0f0f0; border-top:1px solid #d6d6d6; clear:both; height:0; line-height:0; width:100%; font-size:0; padding:0 ; margin-bottom :20px;}
+    .dotted								{border-style:dashed; border-left:0; border-right:0;}
+    .pr									{border:none; border-bottom:1px solid #f0f0f0; border-top:1px solid #d6d6d6; clear:both; height:0; line-height:0; width:100%; font-size:0; padding:0; margin-bottom :30px;}
+
+
+
+/* Kuvat */
+    .kuvat                              {padding:5px; border: 1px solid #cccccc; border-radius:5px; border-radius:5px; display: block;}
+
+    .kuva_1                             {width:300px;   margin-bottom: 20px; display: inline; margin-left: 13px; }
+    .kuva_2      						{width:600px;  margin:0 auto; margin-bottom: 20px}
+
+    .kuva_3      						{width:300px;   margin:0 auto; margin-bottom: 20px}
+
+    .kuva_4                             {width:300px; height: 224px;   margin-bottom: 20px;  transition:width 0.5s ease; float:left; display: inline}
+    .kuva_5                             {width:300px; height: 224px; margin-bottom: 20px;  transition:width 0.5s ease; float: right; display: inline}
+    .slide:hover img                    { width: 132%; height: auto }
+
+
+/* Otsikko */
+
+	h2.otsikko						   {color:#494949; text-shadow:1px 1px 1px #cfcfcf; font-size:33px; line-height:30px;font-weight:normal; text-align: center;margin-bottom: 20px }
+	h2.otsikko span					   {color:#000000; font-weight:bold;}
+	h2.otsikko a:hover 				   {text-decoration : underline;}
+
+/* Pikalinkit */
+
+	#quicknav							{background:url() repeat-x; margin-top: 10px}
+	a .title 							{color:#000000; text-align: center; font-family:arial, sans-serif !important; }
+	.quicknavgrid_4						{width:292px; margin:0px; padding:20px 20px 0; display:inline; float:left; position:relative; margin-left: 1px; text-align: center; height: 250px  }
+
+    .quicknavgrid_3						{width:100px; margin:0px; padding:5px 5px 0; display:inline; float:left; position:relative; margin-left: 1px; text-align: center; height: 20px  }
+	.quicknav							{background:#FFFFFF;}
+	.quicknav:hover						{background:url(../images/link_bg.png) repeat-x;}
+	.quicknavhr							{margin-bottom:0;}
+	
+
+/* Minä sivu */
+
+	dl.history							{margin:10px 10px;}
+	dl.history							{margin:0 0 10px 0; zoom:1}
+	dl.history dt						{width:50px; float:left; font-weight:bold;}
+	dl.history dd						{width:250px; float:left; padding:0; margin-bottom:20px;}
+	
+/* Harrastukset sivu */
+	
+	.har_osa						    {width:223px; position:relative; margin:0 14px 28px 14px; padding:0;}
+	.har_osa img					    {padding:5px; border: 1px solid #aaaaaa; width:211px; -webkit-border-radius: 5px; -moz-border-radius: 5px; background:#f9f9f9; margin-bottom:0px;}
+	.har_osa span        				{display:none;}
+	.har_osa:hover img      			{box-shadow:0px 0px 20px #787878; box-shadow:0px 0px 20px #787878; background:#f9f9f9;}
+	.har_osa:hover span        			{display:inline; position:absolute; bottom:6px; right:6px; padding:10px 15px; background:#f9f9f9; color:#000000; z-index:999; border-left:1px solid #aaaaaa; border-top:1px solid #aaaaaa; border-top-left-radius: 5px; border-radius-topLeft: 5px; }
+
+.right  								{float:right;}
+
+/* Clearfix */  
+
+.clearfix:after                         {content: " "; visibility: hidden; display: block; height: 0; clear: both;}
