@@ -18,21 +18,13 @@ error_reporting(0);
 </head>
 
 <body>
-<div class="nav w3-row">
-  <div class = "w3-col m3 l3">
-    <p></p>
-  </div>
-  <div class = "w3-col m3 l3">
-    <p>Perusopinnot</p>
-  </div>
-  <div class = "w3-col m3 l3">
-    <p>Pakolliset</p>
-  </div>
-  <div class = "w3-col m3 l3">
-    <p>Valinnaiset</p>
-  </div>
-</div>
+  <?php
+  // If your page calls session_start() be sure to include jcart.php first
+
+  ?>
+
 <div class="courses w3-row">
+
   <div class = "leftDiv w3-col m3 l3">
   <div id="jcart"><?php $jcart->display_cart();?></div>
   <div class="courseCart">Hell World</div>

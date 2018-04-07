@@ -12,11 +12,13 @@ body {
 }
 
 .perusopinnot {
-background-color: lightgrey;
+background-color: red;
 }
 
 .pakolliset {
+background-color: blue;
 }
 
 .valinnaiset {
+background-color: green;
 }

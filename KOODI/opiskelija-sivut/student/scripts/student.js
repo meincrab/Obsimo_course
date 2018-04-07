@@ -22,9 +22,9 @@ function coursesOut(data) {
     for (var key in data.courses) {
       //console.log(data.courses[key]);
       if (data.courses[key].category_uuid == id ) {
-      outPer += '<div class="perusopinnot">';
+
       outPer += '<form method="post" action="" class="jcart">';
-      outPer += '<fieldset>';
+      outPer += '<fieldset>'
       outPer += '<input type="hidden" name="my-item-id" value="'+[key]+'" />';
       outPer += '<input type="hidden" name="my-item-name" value="'+ data.courses[key].name +'" />';
       outPer += '<input type="hidden" name="my-item-price" value="'+ data.courses[key].points +'" />';
@@ -36,10 +36,15 @@ function coursesOut(data) {
       outPer +=  '<label>Qty: <input type="text" name="my-item-qty" value="1" size="3" readonly/></label>';
       outPer +=  '</li>';
       outPer +=  '</ul>';
-      outPer +=   '<input type="submit" name="my-add-button" value="add to cart" class="button" />';
-      outPer += '</fieldset>';
+      outPer +=   '<input type="submit" name="my-add-button" value="add to cart" class="button" />'
+      /*outPer += '<div class="perusopinnot" id="dance">';
+      outPer += '<p>' + 'perusopinnot' + '</p>';
+      outPer += '<p>' + data.courses[key].name + '</p>';
+      outPer += '<p>' + data.courses[key].points+ '</p>';
+      outPer += '<button class="add-to-cart" data-id="'+ [key]+'">'+ "Add To Cart" + '</button>';
+      outPer += '</div>';*/
+      outPer += '</fieldset>'
       outPer += '</form>';
-      outPer += '</div>';
 
 
 
@@ -54,58 +59,19 @@ function coursesOut(data) {
       }
       else if (data.courses[key].category_uuid == id2 ) {
         outPak += '<div class="pakolliset">';
-        outPak += '<form method="post" action="" class="jcart">';
-        outPak += '<fieldset>';
-        outPak += '<input type="hidden" name="my-item-id" value="'+[key]+'" />';
-        outPak += '<input type="hidden" name="my-item-name" value="'+ data.courses[key].name +'" />';
-        outPak += '<input type="hidden" name="my-item-price" value="'+ data.courses[key].points +'" />';
-        outPak += '<input type="hidden" name="my-item-url" value="" />';
-        outPak +=  '<ul>';
-        outPak += ' <li><strong>"'+data.courses[key].name+'"</strong></li>';
-        outPak +=  '<li>'+ data.courses[key].points +'</li>';
-        outPak += ' <li>';
-        outPak +=  '<label>Qty: <input type="text" name="my-item-qty" value="1" size="3" readonly/></label>';
-        outPak +=  '</li>';
-        outPak +=  '</ul>';
-        outPak +=   '<input type="submit" name="my-add-button" value="add to cart" class="button" />';
-        outPak += '</fieldset>';
-        outPak += '</form>';
-        outPak += '</div>';
-
-      /*  outPak += '<div class="pakolliset">';
         outPak += '<p>' + 'pakolliset' + '</p>';
         outPak += '<p>' + data.courses[key].name + '</p>';
         outPak += '<p>' + data.courses[key].points+ '</p>';
         outPak += '<button class="add-to-cart" data-id="'+ [key]+'">'+ "Add To Cart" + '</button>';
-        outPak += '</div>'; */
+        outPak += '</div>';
       }
       else {
         outVal += '<div class="valinnaiset">';
-        outVal += '<form method="post" action="" class="jcart">';
-        outVal += '<fieldset>';
-        outVal += '<input type="hidden" name="my-item-id" value="'+[key]+'" />';
-        outVal += '<input type="hidden" name="my-item-name" value="'+ data.courses[key].name +'" />';
-        outVal += '<input type="hidden" name="my-item-price" value="'+ data.courses[key].points +'" />';
-        outVal += '<input type="hidden" name="my-item-url" value="" />';
-        outVal +=  '<ul>';
-        outVal += ' <li><strong>"'+data.courses[key].name+'"</strong></li>';
-        outVal +=  '<li>'+ data.courses[key].points +'</li>';
-        outVal += ' <li>';
-        outVal +=  '<label>Qty: <input type="text" name="my-item-qty" value="1" size="3" readonly/></label>';
-        outVal +=  '</li>';
-        outVal +=  '</ul>';
-        outVal +=   '<input type="submit" name="my-add-button" value="add to cart" class="button" />';
-        outVal += '</fieldset>';
-        outVal += '</form>';
-        outVal += '</div>';
-
-
-    /*   outVal += '<div class="valinnaiset">';
         outVal += '<p>' + 'valinnaiset' + '</p>';
         outVal += '<p>' + data.courses[key].name + '</p>';
         outVal += '<p>' + data.courses[key].points + '</p>';
         outVal += '<button class="add-to-cart" data-id="'+[key]+'">'+ "Add To Cart" + '</button>';
-        outVal += '</div>';*/
+        outVal += '</div>';
       }
 
 

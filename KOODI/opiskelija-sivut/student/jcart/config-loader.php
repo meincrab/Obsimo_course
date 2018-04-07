@@ -11,7 +11,7 @@ include_once('config.php');
 
 // Use default values for any settings that have been left empty
 if (!$config['currencyCode']) $config['currencyCode']                     = 'USD';
-if (!$config['text']['cartTitle']) $config['text']['cartTitle']           = 'Course Cart';
+if (!$config['text']['cartTitle']) $config['text']['cartTitle']           = 'Shopping Cart';
 if (!$config['text']['singleItem']) $config['text']['singleItem']         = 'Item';
 if (!$config['text']['multipleItems']) $config['text']['multipleItems']   = 'Items';
 if (!$config['text']['subtotal']) $config['text']['subtotal']             = 'Subtotal';
