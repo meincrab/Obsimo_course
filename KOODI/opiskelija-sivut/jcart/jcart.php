@@ -79,7 +79,10 @@ class Jcart {
 
 			// If the item is already in the cart, increase its quantity
 			if($this->qtys[$id] > 0) {
-				$this->qtys[$id] += $qty;
+			//	$this->qtys[$id] += $qty;
+			echo '<script language="javascript">';
+            echo 'alert("Your course is already in your cart")';
+            echo '</script>';
 				$this->update_subtotal();
 			}
 			// This is a new item

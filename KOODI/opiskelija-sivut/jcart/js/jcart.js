@@ -36,7 +36,7 @@ $(function() {
 		var setup = (function() {
 			if(config.tooltip === true) {
 				tip.text(config.text.itemAdded);
-	
+
 				// Tooltip is added to the DOM on mouseenter, but displayed only after a successful Ajax request
 				$('.jcart [type=submit]').mouseenter(
 					function(e) {
@@ -74,8 +74,8 @@ $(function() {
 				},
 				// See: http://www.maheshchari.com/jquery-ajax-error-handling/
 				error: function(x, e) {
-					var s = x.status, 
-						m = 'Ajax error: ' ; 
+					var s = x.status,
+						m = 'Ajax error: ' ;
 					if (s === 0) {
 						m += 'Check your network connection.';
 					}
@@ -149,7 +149,7 @@ $(function() {
 			input.keydown(function(e){
 				if (e.which !== 9) {
 					window.clearTimeout(updateTimer);
-				}	
+				}
 			});
 		}
 
