@@ -1,19 +1,19 @@
 # Tilanne
 
-* Päivämäärä: 27.3.2018
+* Päivämäärä: 10.4.2018
 * Ryhmä: gg
-* Tehdyt työtunnit: 269h
-* Tämän hetkinen lasku: 13450€ 
+* Tehdyt työtunnit: 330h
+* Tämän hetkinen lasku: 16500€ 
 
 
 # Miten homma etenee / Current Progress
 
 * Etappi 1 asiat tehty.
-* Etappi 2:ssa muutamia puutteita, ovat korjauksessa. 
+* Etappi 2:ssa asiat korjattu.
 
 ## Ongelmakohdat / Problems ahead 
 
-* Ryhmätyöskentely, työympäristöjen käyttö, sairastelut.
+* Sairastelut
 
 ## Mitä seuraavaksi / What next
 
