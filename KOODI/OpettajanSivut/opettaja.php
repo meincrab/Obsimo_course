@@ -1,13 +1,14 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html>
 
    <head>
        <meta charset="UTF-8">
        <title>OBSIMO | Etusivu</title>
-       <link rel="stylesheet" href="css/style.css" />
-       
-     
-       
+       <link rel="stylesheet" href="css/style.css" />    
    </head>
     
     <body>
@@ -18,9 +19,9 @@
             <!-- Navigaatio -->
             <ul id="navigaatio" class="grid_2">
                 
-                <li><a href="palautukset.html"><span class="meta">Yrityksien palautukset</span><br />Palautukset</a></li>
-                <li><a href="opintosuunnitelmat.html"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
-                <li><a href="index.html" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
+                <li><a href="palautukset.php"><span class="meta">Yrityksien palautukset</span><br />Palautukset</a></li>
+                <li><a href="opintosuunnitelmat.php"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
+                <li><a href="opettaja.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
             </ul>
                       
             <div class="hr grid_3">&nbsp;</div>
@@ -40,13 +41,13 @@
                 <div class="hr grid_3 clearfix quicknavhr" style="margin-left: auto">&nbsp;</div>
                 
 
-			<a class="quicknavgrid_4 quicknav" href="opintosuunnitelmat.html">
+			<a class="quicknavgrid_4 quicknav" href="opintosuunnitelmat.php">
 					<h4 class="title ">Opiskelijan seuranta</h4>
 					<p>Tästä saat kaikkien opiskelijoiden opintosuunnitelmien tiedot</p>
 					<p style="text-align:center;"><img alt="students" src="images/students.png" /></p>
 				
 			</a>
-			<a class="quicknavgrid_4 quicknav" href="palautukset.html">
+			<a class="quicknavgrid_4 quicknav" href="palautukset.php">
 					<h4 class="title ">Yrityksen seuranta</h4>
 					<p>Tästä saat kaikkien yrityksien palautuksien tiedot</p>
 					<p style="text-align:center;"><img alt="yrutykset" src="images/yritykset.png" /></p>
