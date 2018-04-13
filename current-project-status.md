@@ -2,8 +2,8 @@
 
 * Päivämäärä: 10.4.2018
 * Ryhmä: gg
-* Tehdyt työtunnit: 330h
-* Tämän hetkinen lasku: 16500€ 
+* Tehdyt työtunnit: 335h
+* Tämän hetkinen lasku: 16750€ 
 
 
 # Miten homma etenee / Current Progress
