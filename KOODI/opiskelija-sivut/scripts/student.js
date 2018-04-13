@@ -22,10 +22,12 @@ function coursesOut(data) {
     for (var key in data.courses) {
       //console.log(data.courses[key]);
       if (data.courses[key].category_uuid == id ) {
+      var valuez = parseInt([key]);
+      valuez += 1;
       outPer += '<div class="perusopinnot">';
       outPer += '<form method="post" action="" class="jcart">';
       outPer += '<fieldset>';
-      outPer += '<input type="hidden" name="my-item-id" value="'+[key]+'" />';
+      outPer += '<input type="hidden" name="my-item-id" value="'+valuez+'" />';
       outPer += '<input type="hidden" name="my-item-name" value="'+ data.courses[key].name +'" />';
       outPer += '<input type="hidden" name="my-item-price" value="'+ data.courses[key].points +'" />';
       outPer += '<input type="hidden" name="my-item-url" value="" />';
@@ -53,10 +55,12 @@ function coursesOut(data) {
 
       }
       else if (data.courses[key].category_uuid == id2 ) {
+        var valuez = parseInt([key]);
+        valuez += 1;
         outPak += '<div class="pakolliset">';
         outPak += '<form method="post" action="" class="jcart">';
         outPak += '<fieldset>';
-        outPak += '<input type="hidden" name="my-item-id" value="'+[key]+'" />';
+        outPak += '<input type="hidden" name="my-item-id" value="'+valuez+'" />';
         outPak += '<input type="hidden" name="my-item-name" value="'+ data.courses[key].name +'" />';
         outPak += '<input type="hidden" name="my-item-price" value="'+ data.courses[key].points +'" />';
         outPak += '<input type="hidden" name="my-item-url" value="" />';
@@ -80,10 +84,12 @@ function coursesOut(data) {
         outPak += '</div>'; */
       }
       else {
+        var valuez = parseInt([key]);
+        valuez += 1;
         outVal += '<div class="valinnaiset">';
         outVal += '<form method="post" action="" class="jcart">';
         outVal += '<fieldset>';
-        outVal += '<input type="hidden" name="my-item-id" value="'+[key]+'" />';
+        outVal += '<input type="hidden" name="my-item-id" value="'+valuez+'" />';
         outVal += '<input type="hidden" name="my-item-name" value="'+ data.courses[key].name +'" />';
         outVal += '<input type="hidden" name="my-item-price" value="'+ data.courses[key].points +'" />';
         outVal += '<input type="hidden" name="my-item-url" value="" />';

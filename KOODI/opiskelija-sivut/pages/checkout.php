@@ -1,14 +1,15 @@
+
 <?php
-
-// jCart v1.3
-// http://conceptlogic.com/jcart/
-
-// This file demonstrates a basic checkout page
-
 // If your page calls session_start() be sure to include jcart.php first
-include_once('../jcart/jcart.php');
 error_reporting(0);
+include_once('../jcart/jcart.php');
 session_start();
+require_once("../config.php");
+date_default_timezone_set("Europe/Helsinki");
+if(!isset($_SESSION['login_user'])) {
+
+header ("Location: ../login.php"); }
+else {
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -17,13 +18,17 @@ session_start();
 	<head>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-		<title>jCart - Free Ajax/PHP shopping cart</title>
+		<title>Obsimo</title>
 
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="style.css" />
 
 		<link rel="stylesheet" type="text/css" media="screen, projection" href="../jcart/css/jcart.css" />
 	</head>
 	<body>
+		<div id="welcome">
+		Welcome: user, <span><?php echo $_SESSION['login_user'] ?> </span> to coursecart. The time is  <?php echo date('h:i:sa'); ?>
+		<a href="../logout.php">&ensp; Logout</a>
+		</div>
 		<div id="wrapper">
 			<h2>Checkout</h2>
 
@@ -36,11 +41,20 @@ session_start();
 				<p><a href="student.php">&larr; Go Back </a></p>
 
 				<?php
-					//echo '<pre>';
-					//var_dump($_SESSION['jcart']);
-					//echo '</pre>';
+				function addCourses() {
+					foreach ($item as $itemId) {
+							 $mysqlrow = "INSERT INTO ValitutJaksot(idTunnus, idKurssi) VALUES('".$myusername."', '".$itemId['id']."')";
+							 $q = mysqli_query($db, $mysqlrow) or die (mysqli_error());
+							 }
+				}
+
+				if(isset($_POST['submit']))
+				{
+   					addCourses();
+				}
 				?>
 			</div>
+
 
 			<div class="clear"></div>
 		</div>
@@ -49,3 +63,4 @@ session_start();
 		<script type="text/javascript" src="../jcart/js/jcart.js"></script>
 	</body>
 </html>
+<?php } ?>

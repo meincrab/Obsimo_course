@@ -1,9 +1,14 @@
 
 <?php
-
 // If your page calls session_start() be sure to include jcart.php first
-include_once('../jcart/jcart.php');
 error_reporting(0);
+include_once('../jcart/jcart.php');
+session_start();
+date_default_timezone_set("Europe/Helsinki");
+if(!isset($_SESSION['login_user'])) {
+
+header ("Location: ../login.php"); }
+else {
 ?>
 <!DOCTYPE html>
 <html>
@@ -18,6 +23,10 @@ error_reporting(0);
 </head>
 
 <body>
+<div id="welcome">
+Welcome: user, <span><?php echo $_SESSION['login_user'] ?> </span> to coursecart. The time is <?php echo date('h:i:sa'); ?>
+<a href="../logout.php">&ensp; Logout</a>
+</div>
 <div class="nav w3-row">
   <div class = "w3-col m3 l3">
     <p></p>
@@ -46,3 +55,4 @@ error_reporting(0);
 </body>
 
 </html>
+<?php } ?>

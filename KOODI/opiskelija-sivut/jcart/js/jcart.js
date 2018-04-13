@@ -26,9 +26,9 @@ $(function() {
 				success: function(response) {
 					config = response;
 				},
-				error: function() {
+				/*error: function() {
 					alert('Ajax error: Edit the path in jcart.js to fix.');
-				}
+				}*/
 			});
 			return config;
 		}());

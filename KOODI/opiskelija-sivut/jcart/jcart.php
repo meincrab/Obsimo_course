@@ -1,4 +1,7 @@
+
+<?php require_once("../config.php");?>
 <?php
+
 
 // jCart v1.3
 // http://conceptlogic.com/jcart/
@@ -265,7 +268,7 @@ class Jcart {
 	*/
 	public function display_cart() {
 
-		$config = $this->config; 
+		$config = $this->config;
 		$errorMessage = null;
 
 		// Simplify some config variables
@@ -386,6 +389,8 @@ class Jcart {
 			$path = rtrim($path, '/');
 
 			$checkout = $path . '/gateway.php';
+			
+    
 		}
 
 		// Default input type
@@ -484,7 +489,7 @@ class Jcart {
 		echo tab(6) . "</th>\n";
 		echo tab(5) . "</tr>". "\n";
 		echo tab(4) . "</thead>\n";
-		
+
 		// Display the cart footer
 		echo tab(4) . "<tfoot>\n";
 		echo tab(5) . "<tr>\n";
@@ -502,8 +507,8 @@ class Jcart {
 		echo tab(7) . "<span id='jcart-subtotal'>{$config['text']['subtotal']}: <strong>$currencySymbol" . number_format($this->subtotal, $priceFormat['decimals'], $priceFormat['dec_point'], $priceFormat['thousands_sep']) . "</strong></span>\n";
 		echo tab(6) . "</th>\n";
 		echo tab(5) . "</tr>\n";
-		echo tab(4) . "</tfoot>\n";			
-		
+		echo tab(4) . "</tfoot>\n";
+
 		echo tab(4) . "<tbody>\n";
 
 		// If any items in the cart
@@ -568,6 +573,7 @@ class Jcart {
 			if ($config['button']['checkout'])	{
 				$inputType = "image";
 				$src = " src='{$config['button']['checkout']}' alt='{$config['text']['checkoutPaypal']}' title='' ";
+				
 			}
 
 			if($this->itemCount <= 0) {
@@ -579,7 +585,7 @@ class Jcart {
 
 		echo tab(2) . "</fieldset>\n";
 		echo tab(1) . "</form>\n\n";
-		
+
 		echo tab(1) . "<div id='jcart-tooltip'></div>\n";
 	}
 }

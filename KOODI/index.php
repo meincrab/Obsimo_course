@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="styles/mainpage.css">
-<script src="scripts/mainPage.js"></script>
+<link rel="stylesheet" type="text/css" href="layout.css">
+<script src="welcomePage.js"></script>
 <meta charset="utf-8">
 <title>Title of the document</title>
 </head>
@@ -16,9 +16,12 @@
 <div class="headerMenu"></div>
 <!-- Menu/navigation bar on the left -->
 <div class="leftmenu">
-    <span class="menuHeading">Home</span>
-    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-    <span class="menuHeading">Opiskelija</span>
+
+  <button onclick="location.href='opiskelija/login.php';" style="width:auto;">Login as Student</button>
+  <button onclick="location.href='OpettajanSivut/login.php';" style="width:auto;">Login as Teacher</button>
+    <!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login as Student</button>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Login as Teacher</button>
+  -->
     <p>
     <a href>Opiskelusuunnitelma</a> <br/>
     <a href>Suositut polut</a>
@@ -40,8 +43,8 @@
     </p>
 
 </div>
-
-<div id="id01" class="modal">
+<!-- Student block -->
+<!--<div id="id01" class="modal">
 
   <form class="modal-content animate" action="/action_page.php">
 
@@ -52,7 +55,7 @@
       <label for="psw"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="psw" required>
 
-      <button type="submit">Login</button>
+      <button type="submit">Login as Student</button>
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
@@ -60,6 +63,28 @@
     </div>
   </form>
 </div>
+-->
+<!-- Teacher block -->
+<!--<div id="id02" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login as Teacher</button>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+-->
 <!-- Content in the middle of the web page -->
 <div class="content">
 

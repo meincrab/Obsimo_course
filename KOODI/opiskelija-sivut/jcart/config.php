@@ -26,7 +26,7 @@ $config['item']['add']            = 'my-add-button';    // Add to cart button
 
 // Your PayPal secure merchant ID
 // Found here: https://www.paypal.com/webapps/customerprofile/summary.view
-$config['paypal']['id']           = 'seller_1282188508_biz@conceptlogic.com';
+$config['NotEvenAPaypal']['id']           = 'seller_1282188508_biz@conceptlogic.com';
 
 ////////////////////////////////////////////////////////////////////////////////
 // OPTIONAL SETTINGS
@@ -46,7 +46,7 @@ $config['text']['multipleItems']  = '';    // Items
 $config['text']['subtotal']       = '';    // Subtotal
 $config['text']['update']         = '';    // update
 $config['text']['checkout']       = '';    // checkout
-$config['text']['checkoutPaypal'] = '';    // Checkout with PayPal
+$config['text']['checkoutPaypal'] = 'Add courses =)';    // Checkout with PayPal
 $config['text']['removeLink']     = '';    // remove
 $config['text']['emptyButton']    = '';    // empty
 $config['text']['emptyMessage']   = '';    // Your cart is empty!
