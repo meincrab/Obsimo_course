@@ -6,7 +6,6 @@ include_once('../jcart/jcart.php');
 session_start();
 date_default_timezone_set("Europe/Helsinki");
 if(!isset($_SESSION['login_user'])) {
-
 header ("Location: ../login.php"); }
 else {
 ?>

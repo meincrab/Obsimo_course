@@ -1,5 +1,10 @@
 <?php
 session_start();
+date_default_timezone_set("Europe/Helsinki");
+if(!isset($_SESSION['user'])) {
+
+header ("Location: login.php"); }
+else {
 ?>
 
 <!DOCTYPE html>
@@ -12,6 +17,10 @@ session_start();
    </head>
     
     <body>
+    <div class="welcome">
+        Welcome: user, <span><?php echo $_SESSION['user'] ?> </span> to coursecart. The time is <?php echo date('h:i:sa'); ?>
+        <a href="logout.php">&ensp; Logout</a>
+    </div>
         <div id="wrapper" class="clearfix box">
             <!-- Logo -->
             <h1 id="logo" class="grid_1">OBSIMO OPETTAJAN SIVUT</h1>
@@ -82,3 +91,4 @@ session_start();
 
 
 </html>
+<?php } ?>

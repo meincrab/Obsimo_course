@@ -389,8 +389,8 @@ class Jcart {
 			$path = rtrim($path, '/');
 
 			$checkout = $path . '/gateway.php';
-			
-    
+
+
 		}
 
 		// Default input type
@@ -573,7 +573,7 @@ class Jcart {
 			if ($config['button']['checkout'])	{
 				$inputType = "image";
 				$src = " src='{$config['button']['checkout']}' alt='{$config['text']['checkoutPaypal']}' title='' ";
-				
+
 			}
 
 			if($this->itemCount <= 0) {
