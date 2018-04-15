@@ -1,5 +1,6 @@
 <?php
-include("config.php");
+echo "<meta charset='UTF-8'>";
+include("../config.php");
 $courses = [];
 $q = $_REQUEST["q"];
 

@@ -1,5 +1,5 @@
 <?php
-   include("config.php");
+   include("../config.php");
    session_start();
    $error = '';
    
@@ -22,7 +22,7 @@
          
          header("Location: http://" . $_SERVER['HTTP_HOST']
                                     . dirname($_SERVER['PHP_SELF']) . '/'
-                                    . "opettaja.php");
+                                    . "../opettajanSivut/opettaja.php");
       }else {
          $error = "Your Login Name or Password is invalid";
       }

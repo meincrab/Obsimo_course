@@ -2,7 +2,7 @@
 
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video 
                                     {margin: 0; padding: 0; border: 0; font-size: 100%; vertical-align: baseline; }
 
 
@@ -22,22 +22,22 @@ p, dl, hr, h1, h2, ol, ul, pre, table, address, fieldset, img
 #wrapper    							{margin-top:7px;}
 
 ol  									{padding: 0 0 0 5px;}
-
+	
 /* Mitat */
 
 .box    						        {margin-left:auto; margin-right:auto; width:1040px;}
 .float  								{display:inline; float:left; position:relative;}
-
+	
 .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6
                                         {display:inline; float:left; position:relative; margin-left:20px; margin-right:0px; }
-
+	
 .box .grid_1        				    {width:430px;}
 .box .grid_2        				    {width:550px;}
 .box .grid_3         				    {width:1000px;}
 .box .grid_4         				    {width:215px;}
 .box .grid_5        				    {width:765px;}
 .box .grid_6        				    {width:500px; margin-left: 0px;}
-
+	
 
 /* Logo */
 
@@ -89,7 +89,7 @@ h1#logo                                 {font-size:48px; font-weight:normal; mar
 	.quicknav							{background:#FFFFFF;}
 	.quicknav:hover						{background:url(../images/link_bg.png) repeat-x;}
 	.quicknavhr							{margin-bottom:0;}
-
+	
 
 /* Minä sivu */
 
@@ -97,9 +97,9 @@ h1#logo                                 {font-size:48px; font-weight:normal; mar
 	dl.history							{margin:0 0 10px 0; zoom:1}
 	dl.history dt						{width:50px; float:left; font-weight:bold;}
 	dl.history dd						{width:250px; float:left; padding:0; margin-bottom:20px;}
-
+	
 /* Harrastukset sivu */
-
+	
 	.har_osa						    {width:223px; position:relative; margin:0 14px 28px 14px; padding:0;}
 	.har_osa img					    {padding:5px; border: 1px solid #aaaaaa; width:211px; -webkit-border-radius: 5px; -moz-border-radius: 5px; background:#f9f9f9; margin-bottom:0px;}
 	.har_osa span        				{display:none;}
@@ -108,8 +108,6 @@ h1#logo                                 {font-size:48px; font-weight:normal; mar
 
 .right  								{float:right;}
 
-
-
-/* Clearfix */
+/* Clearfix */  
 
 .clearfix:after                         {content: " "; visibility: hidden; display: block; height: 0; clear: both;}

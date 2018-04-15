@@ -1,9 +1,10 @@
 <?php
-include("config.php");
+echo "<meta charset='UTF-8'>";
+include("../config.php");
 $q = $_REQUEST["q"];
 
 $sql = <<<SQLEND
-   Select idTunnus from Opiskelija INNER JOIN Kurssiryhma where Opiskelija.idKurssiryhma=Kurssiryhma.idKurssiryhma AND Kurssiryhma.Nimi = '$q';
+   Select idTunnus, Etunimi, Sukunimi from Opiskelija INNER JOIN Kurssiryhma where Opiskelija.idKurssiryhma=Kurssiryhma.idKurssiryhma AND Kurssiryhma.Nimi = '$q';
 SQLEND;
 
     $result = mysqli_query($db, $sql);
