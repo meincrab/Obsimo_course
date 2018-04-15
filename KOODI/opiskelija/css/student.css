@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+.perusopinnot {
+  border: 5px solid black;
+}
+
+.ydinopinnot {
+  border: 5px solid black;
+}
+
+.valinnaiset {
+  border: 5px solid black;
+}
+
+.courseCart {
+  float: right;;
+}
+
+.courses {
+  font-size: 12px;
+  overflow: scroll;
+  /*height: 540px;*/
+}
+.add-to-cart {
+  font-size: 15px;
+}
+.table {
+  height: 530px;
+  border: 1px solid black;
+  overflow: scroll;
+  width: 100%;
+}
+.totalPoints {
+  height: 530px;
+  width: 60%;
+  float:left;
+}
+.submit {
+  width: 30%;
+  float:left;
+}
