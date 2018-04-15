@@ -19,7 +19,10 @@
 		
       if($count == 1 AND password_verify ($mypassword, $row['HashSalasana'])) {
          $_SESSION['login_user'] = $myusername;
-         
+         header("Location: http://" . $_SERVER['HTTP_HOST']
+                                    . dirname($_SERVER['PHP_SELF']) . '/'
+                                    . "../opiskelija/opiskelija.php");
+                                    
          $error = "works!";
       }else {
          $error = "Your Login Name or Password is invalid";
