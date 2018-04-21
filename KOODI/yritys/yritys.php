@@ -23,7 +23,8 @@ if ($_POST['action'] == "Submit Form") {
     <body>
         <form action = "yritys.php" method = "post">
         <div id="wrapper" class="clearfix box">
-            <!-- Logo --><h1 id="logo" class="grid_3 otsikko clearfix">OBSIMO YRITYKSEN SIVUT</h1>
+            <!-- Logo -->
+			<h1 id="logo" class="grid_1">OBSIMO YRITYKSEN SIVUT</h1>
 			
 			<!-- nav -->
 		<ul id="navigaatio" class="grid_2">

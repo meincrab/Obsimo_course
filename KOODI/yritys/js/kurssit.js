@@ -36,7 +36,6 @@ function coursesOut(data) {
         outPer += '<div class="perusopinnot" id="'+ courseID + '">';
       //  outPer += '<p>' + 'perusopinnot' + '</p>';
         outPer += '<p>' + data.courses[key].name + '</p>';
-		outPer += '<p>' + data.courses[key].description+ '</p>';
         outPer += '<p>' + data.courses[key].points+ '</p>';
         outPer += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outPer += '</div>';
@@ -48,7 +47,6 @@ function coursesOut(data) {
         outPak += '<div class="ydinopinnot"  id="'+ courseID + '">';
         //outPak += '<p>' + 'ydinopinnot' + '</p>';
         outPak += '<p>' + data.courses[key].name + '</p>';
-		outPer += '<p>' + data.courses[key].description+ '</p>';
         outPak += '<p>' + data.courses[key].points + '</p>';
         outPak += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outPak += '</div>';
@@ -60,7 +58,6 @@ function coursesOut(data) {
         outVal += '<div class="valinnaiset"  id="'+ courseID + '">';
         //   outVal += '<p>' + 'valinnaiset' + '</p>';
         outVal += '<p>' + data.courses[key].name + '</p>';
-		outPer += '<p>' + data.courses[key].description+ '</p>';
         outVal += '<p>' + data.courses[key].points + '</p>';
         outVal += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outVal += '</div>';
@@ -164,7 +161,6 @@ function showCourseCart() {
 
 function setValue() {
   var ids;
-  var lukukaudet
   for(var i in courseCart) {
     if (courseCart[i].courseId != undefined){
     ids += courseCart[i].courseId + ",";
@@ -176,14 +172,11 @@ function setValue() {
   var idsRep =idsRep.replace(/NaN/gi,"");
   //idsRep = '"'+idsRep + '"';
   //alert (idsRep);
-  var lukukaudetRep =lukukaudetRep.replace(/NaN/gi,"");
-    //alert (lukukaudetRep);
     if (idsRep.length == 0) {
       alert ("no course added at the moment!")
     }
     else {
       document.dataToPhp.pickedCourses.value = idsRep;
-      document.dataToPhp.pickedLukukaudet.value = lukukaudetRep;
       document.forms["dataToPhp"].submit();
     }
 
