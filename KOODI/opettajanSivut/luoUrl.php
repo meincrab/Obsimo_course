@@ -12,6 +12,6 @@ $query->execute(
         $_SERVER["REQUEST_TIME"]
     )
 );
-$url = "http://example.com/activate.php?token=$token";
+$url = "http://167.99.85.3/gg/KOODI/yritys/yritys.php?token=$token";
 echo "<script type='text/javascript'>alert('$url');</script>";
 ?>
