@@ -5,7 +5,7 @@
    
    if($_SERVER["REQUEST_METHOD"] == "POST") { 
 
-      
+    
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $_SESSION['login_user'] = $myusername;
 	  
@@ -15,8 +15,7 @@
       }else {
          $error = "Your Login Name or Password is invalid";
       }
-   }
-
+	  
 ?>
 <html>
    
