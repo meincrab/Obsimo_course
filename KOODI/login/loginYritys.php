@@ -17,7 +17,7 @@
 
       // If result matched $myusername and $mypassword, table row must be 1 row
 
-      if($count == 1 AND password_verify ($mypassword, $row['Nimi'])) {
+      if($count == 1 AND password_verify ($mypassword, $row['testPassword'])) {
          $_SESSION['login_user'] = $myusername;
 
          header("Location: http://" . $_SERVER['HTTP_HOST']
