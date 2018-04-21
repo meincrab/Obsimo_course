@@ -67,7 +67,7 @@ function coursesOut(data) {
 };
 //variables for course cart
   var courseCart = {};
-  var coursesToAdd = ",";
+  var coursesToAdd = [];
 //Global names/points/etc
   var courseName= [];
   var coursePoints = [];
@@ -91,11 +91,11 @@ function addToCart(data){
           }
           console.log(data.courses[key]);
         */
+        console.log(courseCart);
+        console.log(coursesToAdd);
           if (courseCart[key] == undefined) {
-            coursesToAdd += idKey + ",";
-            console.log(coursesToAdd);
             courseCart[key] = 1;
-
+            coursesToAdd += idKey + ","
           }
           else {
             alert("this course already added");
