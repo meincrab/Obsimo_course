@@ -9,7 +9,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']);
 
-      $sql = "SELECT idYritys, testPassword FROM Yritys WHERE idYritys = '$myusername'";
+      $sql = "SELECT Nimi, testPassword FROM Yritys WHERE Nimi = '$myusername'";
       $result = mysqli_query($db,$sql);
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
@@ -17,7 +17,7 @@
 
       // If result matched $myusername and $mypassword, table row must be 1 row
 
-      if($count == 1 AND password_verify ($mypassword, $row['testPassword'])) {
+      if($count == 1 AND password_verify ($mypassword, $row['Nimi'])) {
          $_SESSION['login_user'] = $myusername;
 
          header("Location: http://" . $_SERVER['HTTP_HOST']

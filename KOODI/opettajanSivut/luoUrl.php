@@ -1,8 +1,5 @@
 <?php
 	include("../config.php");
-	session_start();
-	$user = $_SESSION['login_user'];
-	$groups = [];
 	$token = sha1(uniqid($username, true));
 	$oikeaNimi = $_POST['nimi']
 	$query = $db->prepare(
