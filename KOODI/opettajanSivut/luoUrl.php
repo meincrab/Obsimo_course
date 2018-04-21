@@ -1,5 +1,5 @@
 <?php
-require_once("../config.php");
+require_once("config.php");
 $username = $_POST['nimi'];
 $token = sha1(uniqid($username, true));
 $query = $db->prepare(
