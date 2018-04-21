@@ -7,18 +7,9 @@
 
       
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
-      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
-         
-      $sql = "SELECT idYritys, Salasana FROM Yritys WHERE idYritys = '$myusername'";
-      $result = mysqli_query($db,$sql);
-      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
-	
-	  $count = mysqli_num_rows($result);
+      $_SESSION['login_user'] = $myusername;
 	  
-	  if($count == 1 AND password_verify ($mypassword, $row['Salasana'])) {
-         $_SESSION['user'] = $myusername;
-         
-         header("Location: http://" . $_SERVER['HTTP_HOST']
+      header("Location: http://" . $_SERVER['HTTP_HOST']
                                     . dirname($_SERVER['PHP_SELF']) . '/'
                                     . "../yritys/yritys.php");
       }else {

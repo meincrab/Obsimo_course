@@ -17,16 +17,16 @@
 	  
 	  // $palaute = htmlspecialchars($_POST['palaute']);
 
-      $query = mysqli_query($db, "SELECT * FROM Suositus WHERE idYritys='$kayttaja'");
+      $query = mysqli_query($db, "SELECT * FROM Suositus WHERE test='$kayttaja'");
       $numOfRows = mysqli_num_rows($query);
       //echo $numOfRows;
       if ($numOfRows != 0) {
-        $mySqlDel = "DELETE FROM Suositus WHERE idYritys = '$kayttaja'";
+        $mySqlDel = "DELETE FROM Suositus WHERE test = '$kayttaja'";
         mysqli_query($db, $mySqlDel);
       }
         $i = 0;
         foreach ($pickCourses as $value) {
-        $mySqlC = "INSERT INTO Suositus(idYritys, idKurssi)
+        $mySqlC = "INSERT INTO Suositus(test, idKurssi)
         VALUES('$kayttaja','$value')";
         $result = mysqli_query($db, $mySqlC);
         $i++;
