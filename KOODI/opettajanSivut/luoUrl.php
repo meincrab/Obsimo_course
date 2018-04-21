@@ -1,6 +1,6 @@
 <?php
-	include("../config.php");
-	$username = $_POST['nimi']
+	require_once("../config.php");
+	$username = $_POST['nimi'];
 	$token = sha1(uniqid($username, true));
 	$query = $db->prepare(
 		"INSERT INTO pending_users (username, token, tstamp) VALUES (?, ?, ?)"
