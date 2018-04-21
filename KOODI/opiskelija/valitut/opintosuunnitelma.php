@@ -52,8 +52,8 @@ xmlhttp.send();
             <!-- Navigaatio -->
             <ul id="navigaatio" class="grid_2">
 
-                <li><a href="#"><span class="meta">Yrityksien palautukset</span><br />Palautukset</a></li>
-                <li><a href="#"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
+                <li><a href="../palautukset.php"><span class="meta">Yrityksien palautukset</span><br />Palautukset</a></li>
+                <li><a href="opintosuunnitelma.php"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
                 <li><a href="../opiskelija.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
             </ul>
 

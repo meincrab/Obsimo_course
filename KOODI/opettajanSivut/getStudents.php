@@ -8,7 +8,7 @@ $sql = <<<SQLEND
 SQLEND;
 
     $result = mysqli_query($db, $sql);
-    echo "<h2> Students: </h2>";
+    echo "<h1> Students: </h1>";
     echo "<table>";
     while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
         echo "<tr><td><a onClick=showCourses('{$row['idTunnus']}') href='#'> {$row['idTunnus']} </a></td></tr>";

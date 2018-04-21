@@ -1,9 +1,22 @@
 <?php
 include("../config.php");
 session_start();
+if (!isset($_SESSION['q'])) $_SESSION['q'] = '';
 $user = $_SESSION['user'];
 $groups = [];
 
+if (isset($_POST['save']))
+{
+    $q = $_SESSION['q'];
+    $sql = <<<SQLEND
+    UPDATE Opiskelija SET OpettajanPalaute = '$_POST[feedback]' WHERE idTunnus = '$q'
+SQLEND;
+    if(mysqli_query($db, $sql)){
+    echo "Records inserted successfully.";
+    } else{
+        echo "ERROR: Could not able to execute $sql. " . mysqli_error($db);
+    }
+}
 
 //printing result of sql request
 function printGroups($db, $user) {
@@ -25,10 +38,11 @@ SQLEND;
 
 <script>
 function showStudents(d) {
+    document.getElementById("courses").innerHTML = '';
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
-            document.getElementById("groups").innerHTML = this.responseText;
+            document.getElementById("students").innerHTML = this.responseText;
         }
     };
     xmlhttp.open("GET", "getStudents.php?q="+d, true);
@@ -81,19 +95,20 @@ xmlhttp.send();
             <div class="hr grid_3 clearfix quicknavhr">&nbsp;</div>
         
             <div class="grid_3" style="margin-top: 50px">
-                <h2>RYHMÄT</h2>
-                <div class="hr dotted clearfix" style="margin-top: -10px">&nbsp;</div>
-            </div>
-            
-            <div id="quicknav" class="grid_3">
+                <div id="groups" class="grid_4">
+                <h1> Ryhmät: </h1>
                 <?php
                     printGroups($db, $user);
                 ?>
+                </div>
+                <div id="students" class="grid_4">
+                </div>
+                <div id="courses" class="grid_php">
+                </div>
+                <div class="hr dotted clearfix" style="margin-top: -10px">&nbsp;</div>
             </div>
-            <div id="groups" class="grid_3">
-            </div>
-            <div id="courses" class="grid_3">
-            </div>
+            
+            
 		  <!-- Footer -->
             <div class="hr grid_3 clearfix" style="margin-top: 75%">&nbsp;</div>
 		  <p class="grid_3 footer clearfix">

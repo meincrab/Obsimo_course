@@ -1,13 +1,6 @@
 <?php
 session_start();
 
-if ($_POST['action'] == "Submit Form") {
-    $_SESSION['login_user'] = '';
-    session_destroy();
-    header("Location: http://" . $_SERVER['HTTP_HOST']
-                                    . dirname($_SERVER['PHP_SELF']) . '/'
-                                    . "../index.html");
-}
 
 ?>
 
@@ -93,3 +86,16 @@ if ($_POST['action'] == "Submit Form") {
 
 
 </html>
+
+
+<?php
+
+if ($_POST['action'] == "Submit Form") {
+    $_SESSION['login_user'] = '';
+    session_destroy();
+    header("Location: http://" . $_SERVER['HTTP_HOST']
+                                    . dirname($_SERVER['PHP_SELF']) . '/'
+                                    . "../index.html");
+}
+
+?>
