@@ -14,9 +14,9 @@
 	  
       $kayttaja = $_SESSION['login_user'];
       echo ($kayttaja);
-	  
+	  // pitää korjata
 	  // $palaute = htmlspecialchars($_POST['palaute']);
-
+      //
       $query = mysqli_query($db, "SELECT * FROM Suositus WHERE nimi='$kayttaja'");
       $numOfRows = mysqli_num_rows($query);
       //echo $numOfRows;
