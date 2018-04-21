@@ -65,8 +65,8 @@ if ($_POST['action'] == "Submit Form") {
 
 			</a>
             <a class="quicknavgrid_4 quicknav" href="palautukset.php">
-                <h4 class="title ">Ilmoita virheellisistä tiedoista</h4>
-				         <p>Ilmoita virheellisistä tiedoista</p>
+                <h4 class="title ">Placeholder</h4>
+				         <p>Placeholder</p>
                  <input type="image" name="logout" src="../images/logout.png">
                  <input type="hidden" name="action" value="Submit Form">
 			</a>

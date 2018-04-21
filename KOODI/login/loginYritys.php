@@ -7,8 +7,7 @@
       // testejä varten ei login varmistusta
       
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
-       
-         $_SESSION['user'] = $myusername;
+         $_SESSION['login_user'] = $myusername;
          
          header("Location: http://" . $_SERVER['HTTP_HOST']
                                     . dirname($_SERVER['PHP_SELF']) . '/'
