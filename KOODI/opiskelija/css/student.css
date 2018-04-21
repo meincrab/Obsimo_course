@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: #f2f2f2;
 }
 
 .header {
@@ -10,17 +11,21 @@ body {
   padding-bottom: 10px;
 
 }
+nav {
+  padding: 5px;
+  border: 1px solid black;
+}
 
 .perusopinnot {
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 .ydinopinnot {
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 .valinnaiset {
-  border: 5px solid black;
+  border: 2px solid black;
 }
 
 .courseCart {
@@ -39,6 +44,12 @@ body {
   height: 530px;
   border: 1px solid black;
   overflow: scroll;
+  width: 100%;
+}
+#tableName{
+  width: 100%;
+}
+#table {
   width: 100%;
 }
 .totalPoints {
