@@ -52,20 +52,20 @@ if ($_POST['action'] == "Submit Form") {
 
 
 			<a class="quicknavgrid_4 quicknav" href="valinta/kurssit.php">
-					<h4 class="title ">Uusin opintosuunnitelma</h4>
+					<h4 class="title ">Uusi opintosuunnitelma</h4>
 					<p>Tästä voit luoda uuden opintosuunnitelman</p>
 					<p style="text-align:center;"><img alt="students" src="../images/students.png" /></p>
 
 			</a>
 			<a class="quicknavgrid_4 quicknav" href="valitut/opintosuunnitelma.php">
 					<h4 class="title ">Näyttää oman opintosuunnitelman</h4>
-					<p>Tästä voit nähdä valitut kurssit</p>
+					<p>Tästä voit nähdä omat kurssit</p>
 					<p style="text-align:center;"><img alt="yrutykset" src="../images/yritykset.png" /></p>
 
 			</a>
             <a class="quicknavgrid_4 quicknav" href="palautukset.php">
                 <h4 class="title ">Kirjaituminen ulos</h4>
-				<p>Tästä voit kirjaitua ulos</p>
+				         <p>Tästä voit kirjaitua ulos</p>
                  <input type="image" name="logout" src="../images/logout.png">
                  <input type="hidden" name="action" value="Submit Form">
 			</a>
@@ -93,3 +93,14 @@ if ($_POST['action'] == "Submit Form") {
 
 
 </html>
+<?php
+
+if ($_POST['action'] == "Submit Form") {
+    $_SESSION['login_user'] = '';
+    session_destroy();
+    header("Location: http://" . $_SERVER['HTTP_HOST']
+                                    . dirname($_SERVER['PHP_SELF']) . '/'
+                                    . "../index.html");
+}
+
+?>
