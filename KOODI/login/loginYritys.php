@@ -6,14 +6,26 @@
    if($_SERVER["REQUEST_METHOD"] == "POST") { 
       // testejä varten ei login varmistusta
       
-      $myusername = mysqli_real_escape_string($db,$_POST['username']);
-         $_SESSION['login_user'] = $myusername;
+      $m$myusername = mysqli_real_escape_string($db,$_POST['username']);
+      $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
+         
+      $sql = "SELECT idYritys, Salasana FROM Yritys WHERE idYritys = '$myusername'";
+      $result = mysqli_query($db,$sql);
+      $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+	
+	  $count = mysqli_num_rows($result);
+	  
+	  if($count == 1 AND password_verify ($mypassword, $row['Salasana'])) {
+         $_SESSION['user'] = $myusername;
          
          header("Location: http://" . $_SERVER['HTTP_HOST']
                                     . dirname($_SERVER['PHP_SELF']) . '/'
                                     . "../yritys/yritys.php");
-
+      }else {
+         $error = "Your Login Name or Password is invalid";
+      }
    }
+
 ?>
 <html>
    
@@ -47,6 +59,7 @@
                
                <form action = "" method = "post">
                   <label>Tunnus:</label><input type = "text" name = "username" class = "box"/><br /><br />
+				  <label>Salasana:</label><input type = "password" name = "password" class = "box" /><br/><br />
                   <input type = "submit" value = " Kirjaudu sisään "/><br />
                </form>
                
