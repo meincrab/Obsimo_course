@@ -1,5 +1,5 @@
 <?php
-   require_once("../config.php");
+   include("../config.php");
    session_start();
    $error = '';
    
@@ -27,6 +27,7 @@
    }
 
 ?>
+
 <html>
    
    <head>
