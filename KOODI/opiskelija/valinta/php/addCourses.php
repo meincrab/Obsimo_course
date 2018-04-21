@@ -1,6 +1,6 @@
+<?php //require_once("config.php");?>
 <?php
   session_start();
-  require_once("config.php");
   date_default_timezone_set("Europe/Helsinki");
   if(!isset($_SESSION['login_user'])) {
 
@@ -10,27 +10,15 @@
 
       $courses = htmlspecialchars($_POST['pickedCourses']);
       $kayttaja = $_SESSION['login_user'];
-      //echo ($kayttaja);
+      echo ($_SESSION['login_user']);
+      echo ($kayttaja);
+      echo ($courses);
       $courses = explode(",", $courses);
-    /*  foreach ($courses as $value) {
-        echo ($value);
-      }*/
+      $i = 0;
+      foreach ($courses as &$value){
+        echo ($courses[$i]);
+        $i ++;
+      }
 
-      $query = mysqli_query($db, "SELECT * FROM ValitutJaksot WHERE idTunnus='$kayttaja'");
-      $numOfRows = mysqli_num_rows($query);
-      //echo $numOfRows;
-      if ($numOfRows != 0) {
-        $mySqlDel = "DELETE FROM ValitutJaksot WHERE idTunnus = '$kayttaja'";
-        mysqli_query($db, $mySqlDel);
-      }
-        foreach ($courses as $value) {
-        $mySqlC = "INSERT INTO ValitutJaksot(idTunnus, idKurssi)
-        VALUES('$kayttaja','$value')";
-        $result = mysqli_query($db, $mySqlC);
-      }
-      echo ("<SCRIPT LANGUAGE='JavaScript'>
-        window.alert('Suunnitelma luotu')
-        </SCRIPT>");
-      header('Location: ../../opiskelija.php');
 }
 ?>
