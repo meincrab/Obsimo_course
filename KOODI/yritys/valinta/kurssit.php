@@ -1,4 +1,3 @@
-
 <?php
 // If your page calls session_start() be sure to include jcart.php first
 error_reporting(0);

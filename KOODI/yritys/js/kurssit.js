@@ -167,7 +167,6 @@ function setValue() {
     }
   }
   var idsRep = ids.replace(/undefined/gi,"");
-
   var idsRep =idsRep.replace(/NaN/gi,"");
   //idsRep = '"'+idsRep + '"';
   //alert (idsRep);

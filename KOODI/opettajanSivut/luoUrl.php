@@ -1,7 +1,7 @@
 <?php
 	include("../config.php");
+	$username = $_POST['nimi']
 	$token = sha1(uniqid($username, true));
-	$oikeaNimi = $_POST['nimi']
 	$query = $db->prepare(
 		"INSERT INTO pending_users (username, token, tstamp) VALUES (?, ?, ?)"
 	);
@@ -13,6 +13,6 @@
 		)
 	);
 	$url = "http://167.99.85.3/gg/KOODI/yritys.php?token=$token";
-	echo "Url:" + $url;
+	echo "<h2>" . $url; . "</h2>";
 	
 ?>

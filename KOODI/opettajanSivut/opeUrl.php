@@ -1,11 +1,3 @@
-<?php
-include("../config.php");
-session_start();
-$user = $_SESSION['login_user'];
-$groups = [];
-
-?>
-
 <!DOCTYPE html>
 <html>
 
