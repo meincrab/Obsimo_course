@@ -11,12 +11,11 @@
       $pickCourse = substr($pickCourse, 0, -1);
       $pickCourses = explode(',', $pickCourse);
       echo count($pickCourses);
-
-      $suuntautuminen = htmlspecialchars($_POST['suuntautuminen']);
+	  
       $kayttaja = $_SESSION['login_user'];
       //echo ($kayttaja);
+	  
 	  $palaute = htmlspecialchars($_POST['palaute']);
-
 
       $query = mysqli_query($db, "SELECT * FROM Suositus WHERE idYritys='$kayttaja'");
       $numOfRows = mysqli_num_rows($query);
@@ -28,14 +27,14 @@
         $i = 0;
         foreach ($pickCourses as $value) {
         $mySqlC = "INSERT INTO Suositus(idYritys, idKurssi)
-        VALUES('$kayttaja','$value', '$pickKaudet[$i]')";
+        VALUES('$kayttaja','$value')";
         $result = mysqli_query($db, $mySqlC);
         $i++;
       }
       echo ("<SCRIPT LANGUAGE='JavaScript'>
         window.alert('Suunnitelma luotu')
         </SCRIPT>");
-      header('Location: ../../opiskelija.php');
+      header('Location: ../../yritys.php');
 
     }
 ?>

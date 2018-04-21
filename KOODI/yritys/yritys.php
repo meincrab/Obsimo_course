@@ -24,8 +24,15 @@ if ($_POST['action'] == "Submit Form") {
         <form action = "yritys.php" method = "post">
         <div id="wrapper" class="clearfix box">
             <!-- Logo --><h1 id="logo" class="grid_3 otsikko clearfix">OBSIMO YRITYKSEN SIVUT</h1>
-
 			
+			<!-- nav -->
+		<ul id="navigaatio" class="grid_2">
+		
+            <li><a href="yritys.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
+			<li><a href="ohjeet.php"><span class="meta">Tarkemmat ohjeet</span><br />Ojeet</a></li>
+            <li><a href="valitut/opintosuunnitelma.php"><span class="meta">placeholder</span><br />placeholder</a></li>
+		</ul>
+		
             <div class="hr grid_3">&nbsp;</div>
             <div class="clear"></div>
 
