@@ -8,7 +8,6 @@
    </head>
     
     <body>
-        <form action = "opettaja.php" method = "post">
         <div id="wrapper" class="clearfix box">
             <!-- Logo -->
             <h1 id="logo" class="grid_1">OBSIMO OPETTAJAN SIVUT</h1>     
