@@ -13,20 +13,20 @@
       echo count($pickCourses);
 	  
       $kayttaja = $_SESSION['login_user'];
-      //echo ($kayttaja);
+      echo ($kayttaja);
 	  
 	  // $palaute = htmlspecialchars($_POST['palaute']);
 
-      $query = mysqli_query($db, "SELECT * FROM Suositus WHERE test='$kayttaja'");
+      $query = mysqli_query($db, "SELECT * FROM Suositus WHERE nimi='$kayttaja'");
       $numOfRows = mysqli_num_rows($query);
       //echo $numOfRows;
       if ($numOfRows != 0) {
-        $mySqlDel = "DELETE FROM Suositus WHERE test = '$kayttaja'";
+        $mySqlDel = "DELETE FROM Suositus WHERE nimi = '$kayttaja'";
         mysqli_query($db, $mySqlDel);
       }
         $i = 0;
         foreach ($pickCourses as $value) {
-        $mySqlC = "INSERT INTO Suositus(test, idKurssi)
+        $mySqlC = "INSERT INTO Suositus(nimi, idKurssi)
         VALUES('$kayttaja','$value')";
         $result = mysqli_query($db, $mySqlC);
         $i++;
