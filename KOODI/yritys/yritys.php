@@ -35,7 +35,9 @@ if ($_POST['action'] == "Submit Form") {
 		
             <div class="hr grid_3">&nbsp;</div>
             <div class="clear"></div>
-
+			
+		<div class="hr grid_3">&nbsp;</div>
+        <div class="clear"></div>
 
 
             <!-- Otsikko -->

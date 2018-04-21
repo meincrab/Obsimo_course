@@ -50,16 +50,16 @@ else {
         <div class="totalPoints">
 
         </div>
-      <div class="submit">
-        <b> Valitse suuntautuminen jolle suosittelet kursseja: </b>
-         <select name="suuntautuminen">
+      <div class="submit"> 
+        <p> Vapaavalintainen palaute / ehdoita uutta kurssia:</p>
+        <form id="dataToPhp" name="dataToPhp" method="post" action="../valinta/php/addCourses.php">
+		<b> Valitse suuntautuminen jolle suosittelet kursseja: </b>
+        <select name="suuntautuminen">
             <option value="Kyberturvallisuus">Kyberturvallisuus</option>
             <option value="Mediatekniikka">Mediatekniikka</option>
             <option value="Ohjelmistotekniikka">Ohjelmistotekniikka</option>
             <option value="Tietoverkkotekniikka">Tietoverkkotekniikka</option>
-        </select> 
-        <p> Vapaavalintainen palaute / ehdoita uutta kurssia:</p>
-        <form id="dataToPhp" name="dataToPhp" method="post" action="../valinta/php/addCourses.php">
+        </select>
         <input type="hidden" name="pickedCourses" id="pickedCourses" value="">
         <input type="hidden" name="pickedLukukaudet" id="pickedLukukaudet" value="">
         <p>
