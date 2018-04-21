@@ -1,5 +1,8 @@
 <?php
+include("../config.php");
 session_start();
+$user = $_SESSION['login_user'];
+$groups = [];
 
 ?>
 
@@ -47,14 +50,4 @@ session_start();
 
 </html>
 
-<?php
 
-if ($_POST['action'] == "Submit Form") {
-    $_SESSION['user'] = '';
-    session_destroy();
-    header("Location: http://" . $_SERVER['HTTP_HOST']
-                                    . dirname($_SERVER['PHP_SELF']) . '/'
-                                    . "../index.html");
-}
-
-?>
