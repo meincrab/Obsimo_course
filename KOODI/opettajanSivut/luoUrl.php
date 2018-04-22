@@ -1,7 +1,9 @@
 <?php
 	require_once("config.php");
+	date_default_timezone_set("Europe/Helsinki");
 	if ($conn->connect_error) {
-               die("Connection failed: " . $conn->connect_error);
+			echo "<script type='text/javascript'>alert('CONNECTION FAILED');</script
+            die("Connection failed: " . $conn->connect_error);
     } else {
 	$username = $_POST['nimi'];
 	$token = sha1(uniqid($username, true));
