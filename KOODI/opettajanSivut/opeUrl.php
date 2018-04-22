@@ -12,7 +12,7 @@
             <!-- Logo -->
             <h1 id="logo" class="grid_1">OBSIMO OPETTAJAN SIVUT</h1>     
             <div class="hr grid_3 clearfix">&nbsp;</div>
-				<form method="post" action="luoUrl.php" target="_top">
+				<form method="post" action="luoUrl.php">
 						<h2>Tiedot</h2>
 						<p>
 							Yrityksen nimi: <input type="text" size="40" name="nimi"><br>
