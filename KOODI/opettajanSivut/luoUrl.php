@@ -6,7 +6,7 @@ date_default_timezone_set("Europe/Helsinki");
 $query = "INSERT INTO pending_users (username, token, tstamp) VALUES (?,?,?)";
 $stmt = $db->prepare($query);
         
-$stmt->bind_params($username, $token, $timestamp);
+$stmt->bind_params("ssi", $username, $token, $timestamp);
                              
 $username = $_POST['nimi'];
 $token = sha1(uniqid($username, true));
