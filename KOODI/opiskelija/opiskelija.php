@@ -1,5 +1,6 @@
 <?php
 session_start();
+if(!isset($_POST['action'])) $_POST['action'] = '';
 
 if ($_POST['action'] == "Submit Form") {
     $_SESSION['login_user'] = '';
@@ -60,7 +61,7 @@ if ($_POST['action'] == "Submit Form") {
 			<a class="quicknavgrid_4 quicknav" href="valitut/opintosuunnitelma.php">
 					<h4 class="title ">Näyttää oman opintosuunnitelman</h4>
 					<p>Tästä voit nähdä omat kurssit</p>
-					<p style="text-align:center;"><img alt="yrutykset" src="../images/yritykset.png" /></p>
+					<p style="text-align:center;"><img alt="yrutykset" src="../images/books.png" /></p>
 
 			</a>
             <a class="quicknavgrid_4 quicknav" href="palautukset.php">

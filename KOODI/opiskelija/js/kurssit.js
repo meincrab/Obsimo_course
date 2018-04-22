@@ -6,7 +6,7 @@ var id2 = '5006fbed-005d-4f1b-8088-540b1b297742';
 var id3 =  ' 09df6ec4-c465-4669-93d3-b1dd297bbee5'
 var i = 0;
 
-lukukausi = ["Syksy 1", "Kevat 1", "Syksy 2", "Kevat 2", "Syksy 3", "Kevat 3", "Syksy 4", "Kevat 4"]
+lukukausi = ["Syksy 1", "Kevät 1", "Syksy 2", "Kevät 2", "Syksy 3", "Kevät 3", "Syksy 4", "Kevät 4"]
 
 function init() {
     //getting kurssit data

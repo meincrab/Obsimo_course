@@ -1,6 +1,7 @@
 <?php
 include("../config.php");
 session_start();
+$message = '';
 if (!isset($_SESSION['q'])) $_SESSION['q'] = '';
 $user = $_SESSION['user'];
 $groups = [];
@@ -12,9 +13,9 @@ if (isset($_POST['save']))
     UPDATE Opiskelija SET OpettajanPalaute = '$_POST[feedback]' WHERE idTunnus = '$q'
 SQLEND;
     if(mysqli_query($db, $sql)){
-    echo "Records inserted successfully.";
+    $message = "Records inserted successfully.";
     } else{
-        echo "ERROR: Could not able to execute $sql. " . mysqli_error($db);
+        $message = "ERROR: Could not able to execute $sql. " . mysqli_error($db);
     }
 }
 
@@ -39,6 +40,7 @@ SQLEND;
 <script>
 function showStudents(d) {
     document.getElementById("courses").innerHTML = '';
+    document.getElementById("mes").innerHTML = '';
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -106,6 +108,7 @@ xmlhttp.send();
                 <div id="courses" class="grid_php">
                 </div>
                 <div class="hr dotted clearfix" style="margin-top: -10px">&nbsp;</div>
+                <?php echo "<p id='mes'>$message </p>" ?>
             </div>
             
             

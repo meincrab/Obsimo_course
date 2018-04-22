@@ -57,8 +57,8 @@ function showFeedbacks(d) {
             <ul id="navigaatio" class="grid_2">
                 
                 <li><a href="palautukset.php"><span class="meta">Yrityksien palautukset</span><br />Palautukset</a></li>
-                <li><a href="opintosuunnitelmat.php"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
-                <li><a href="opettaja.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
+                <li><a href="valitut/opintosuunnitelmat.php"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
+                <li><a href="opiskelija.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
             </ul>
                       
             <div class="hr grid_3">&nbsp;</div>

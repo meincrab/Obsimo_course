@@ -4,20 +4,8 @@ session_start();
 $user = $_SESSION['login_user'];
 $groups = [];
 
-//printing result of sql request
-function printGroups($db, $user) {
-    $sql = <<<SQLEND
-   SELECT Nimi from Kurssiryhma
-   INNER JOIN OpettajaKurssiryhma ON Kurssiryhma.idKurssiryhma = OpettajaKurssiryhma.idKurssiryhma
-   INNER JOIN Opettaja ON OpettajaKurssiryhma.idOpettaja=Opettaja.idOpettaja AND Opettaja.idOpettaja = '$user'
-SQLEND;
-    $result = mysqli_query($db, $sql);
-    echo "<table>";
-    while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
-        echo "<tr><td><a href='#' onClick=showStudents('{$row['Nimi']}')> {$row['Nimi']} </a></td></tr>";
-    }
-    echo "</table>";
-}
+
+
 
 
 ?>
@@ -70,14 +58,10 @@ xmlhttp.send();
             <div class="hr grid_3 clearfix quicknavhr">&nbsp;</div>
 
             <div class="grid_3" style="margin-top: 50px">
-                <h2>KURSSIT</h2>
-                <div class="hr dotted clearfix" style="margin-top: -10px">&nbsp;</div>
+
             </div>
 
             <div id="quicknav" class="grid_3">
-                <?php
-                    printGroups($db, $user);
-                ?>
             </div>
             <div id="groups" class="grid_3">
             </div>
