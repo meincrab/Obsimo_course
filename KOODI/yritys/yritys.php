@@ -18,7 +18,7 @@ if ($_POST['action'] == "Submit Form") {
        <meta charset="UTF-8">
        <title>OBSIMO</title>
        <link rel="stylesheet" href="../css/style.css" />
-   </head>
+    </head>
 
     <body>
         <form action = "yritys.php" method = "post">
@@ -27,19 +27,17 @@ if ($_POST['action'] == "Submit Form") {
 			<h1 id="logo" class="grid_1">OBSIMO YRITYKSEN SIVUT</h1>
 			
 			<!-- nav -->
-		<ul id="navigaatio" class="grid_2">
-			
-			<li><a href="opintosuunnitelma.php"><span class="meta">placeholder</span><br />placeholder</a></li>
-			<li><a href="ohjeet.php"><span class="meta">Tarkemmat ohjeet</span><br />Ojeet</a></li>
-			<li><a href="yritys.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
-           
-		</ul>
+			<ul id="navigaatio" class="grid_2">
+				
+				<li><a href="palautukset.php"><span class="meta">Poistu</span><br />Poistu</a></li>
+				<li><a href="ohjeet.php"><span class="meta">Tarkemmat ohjeet</span><br />Ojeet</a></li>
+				<li><a href="yritys.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
+			   
+			</ul>
 		
-            <div class="hr grid_3">&nbsp;</div>
-            <div class="clear"></div>
 			
-		<div class="hr grid_3">&nbsp;</div>
-        <div class="clear"></div>
+			<div class="hr grid_3">&nbsp;</div>
+			<div class="clear"></div>
 
 
             <!-- Otsikko -->
@@ -59,7 +57,7 @@ if ($_POST['action'] == "Submit Form") {
 					<p style="text-align:center;"><img alt="students" src="../images/students.png" /></p>
 
 			</a>
-			<a class="quicknavgrid_4 quicknav" href="valitut/opintosuunnitelma.php">
+			<a class="quicknavgrid_4 quicknav" href="ohjeet.php">
 					<h4 class="title ">Käyttöohjeet</h4>
 					<p>Lue tarkennetut käyttöohjeet</p>
 					<p style="text-align:center;"><img alt="yrutykset" src="../images/yritykset.png" /></p>
@@ -73,8 +71,6 @@ if ($_POST['action'] == "Submit Form") {
 			</a>
             </div>
 
-
-
             <div class="hr grid_3 clearfix">&nbsp;</div>
 
 
@@ -84,12 +80,8 @@ if ($_POST['action'] == "Submit Form") {
 			<span class="float"><b>&copy; Copyright</b> Ryhmä GG 2018. Kaikki oikeudet pidätetään.</span>
 			<a class="float right" href="#">Top</a>
 		  </p>
-
-
-
+		
         </div>
-
-
         </form>
     </body>
 
