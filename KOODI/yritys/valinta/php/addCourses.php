@@ -1,12 +1,13 @@
 <?php
-  session_start();
-  require_once("../config.php");
-  date_default_timezone_set("Europe/Helsinki");
-  if(!isset($_SESSION['login_user'])) {
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
+session_start();
+require_once("../config.php");
+date_default_timezone_set("Europe/Helsinki");
+if(!isset($_SESSION['login_user'])) {
 
     header ("Location: ../login.php"); }
     else {
-
       $pickCourse = htmlspecialchars($_POST['pickedCourses']);
       $pickCourse = substr($pickCourse, 0, -1);
       $pickCourses = explode(',', $pickCourse);
@@ -37,4 +38,4 @@
       header('Location: ../../yritys.php');
 
     }
-?>
+
