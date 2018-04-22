@@ -111,3 +111,23 @@ h1#logo                                 {font-size:48px; font-weight:normal; mar
 /* Clearfix */  
 
 .clearfix:after                         {content: " "; visibility: hidden; display: block; height: 0; clear: both;}
+
+
+/* php css */
+
+.grid_php {
+    float: left;
+    width: 500px;
+    margin-left: 10px;
+}
+
+#t_courses,  #t_courses tr, #t_courses td, #t_courses th {
+    border: solid black 1px;
+    border-collapse: collapse;
+}
+
+
+#t_courses td, #t_courses th {
+    padding-left: 10px;
+    padding-right: 10px;
+}
