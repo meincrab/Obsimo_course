@@ -3,5 +3,6 @@
    define('DB_USERNAME', 'obsimo2');
    define('DB_PASSWORD', '16oBSiMo16');
    define('DB_DATABASE', 'obsimoData');
-   $mysqli = new mysqli(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+   // $mysqli = new mysqli(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+   $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 ?>
