@@ -8,9 +8,7 @@
 	$username = $_POST['nimi'];
 	$token = sha1(uniqid($username, true));
 	$timestamp = time();
-	$stmt = $mysqli->prepare(
-		"INSERT INTO pending_users (username, token, tstamp) VALUES (?, ?, ?)"
-	);
+	$stmt = $mysqli->prepare("INSERT INTO pending_users (username, token, tstamp) VALUES (?, ?, ?)";
 	$stmt->bind_params($username, $token, $timestamp );
 	$stmt->execute();
 	
