@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 require_once("config.php");
 date_default_timezone_set("Europe/Helsinki");
 $query = "INSERT INTO pending_users (username, token, tstamp) VALUES (?,?,?)";
-$stmt = $mysqli->prepare($query);
+$stmt->prepare($query);
         
 $stmt->bind_params($username, $token, $timestamp);
                              
