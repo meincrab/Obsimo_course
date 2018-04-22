@@ -1,6 +1,7 @@
 <?php
 // If your page calls session_start() be sure to include jcart.php first
-error_reporting(0);
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
 session_start();
 date_default_timezone_set("Europe/Helsinki");
 if(!isset($_SESSION['login_user'])) {
@@ -22,8 +23,8 @@ else {
   <body>
     <nav>
       <div id="welcome">
-      Tervetuloa kurssien suositteluun käyttäjä: <span><?php echo $_SESSION['login_user'] ?> </span> Kello on: <?php echo date('h:i:sa'); ?>
-      <!-- <a href="logout.php">Logout</a> -->
+      Welcome: user, <span><?php echo $_SESSION['login_user'] ?> </span> to assignment schedule. The time is <?php echo date('h:i:sa'); ?>
+      <a href="logout.php">Logout</a>
       </div>
     </nav>
 
