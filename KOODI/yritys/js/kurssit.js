@@ -62,7 +62,7 @@ function coursesOut(data) {
         outVal += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outVal += '</div>';
       }
-    };
+    }
     //Adding data to page
     $('.mandatory').html(outPer);
     $('.optional').html(outPak);
@@ -91,8 +91,6 @@ function addToCart(data){
     key = idKey - 1;
     //Getting Json data again so we can work with it
     $.getJSON( "kurssit.json", function( data ) {
-
-                var selectedKausi = $("#select"+idKey+" :selected").text();
                 var addingCourse = {
                 courseId : idKey,
                 courseName : data.courses[key].name,
@@ -167,7 +165,7 @@ function setValue() {
     }
   }
   var idsRep = ids.replace(/undefined/gi,"");
-  var idsRep =idsRep.replace(/NaN/gi,"");
+  var idsRep = idsRep.replace(/NaN/gi,"");
   //idsRep = '"'+idsRep + '"';
   //alert (idsRep);
     if (idsRep.length == 0) {
