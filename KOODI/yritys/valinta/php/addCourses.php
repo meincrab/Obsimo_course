@@ -6,7 +6,7 @@ require_once("config.php");
 date_default_timezone_set("Europe/Helsinki");
 if(!isset($_SESSION['login_user'])) {
 
-    header ("Location: .../index.html"); }
+    header ("Location: ..../index.html"); }
     else {
       $pickCourse = htmlspecialchars($_POST['pickedCourses']);
       $pickCourse = substr($pickCourse, 0, -1);
