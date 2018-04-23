@@ -60,9 +60,9 @@ else {
             <option value="Tietoverkkotekniikka">Tietoverkkotekniikka</option>
         </select> -->
         <input type="hidden" name="pickedCourses" id="pickedCourses" value="">
-        <!--
+        
         <textarea name="palaute" cols=40 rows="10"></textarea>
-        -->
+        
         <a href="#" onclick="setValue();" id="kurssienLisays">Lisää kurssit</a>
       </form>
       </div>
