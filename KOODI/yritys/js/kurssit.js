@@ -36,6 +36,7 @@ function coursesOut(data) {
         outPer += '<div class="perusopinnot" id="'+ courseID + '">';
       //  outPer += '<p>' + 'perusopinnot' + '</p>';
         outPer += '<p>' + data.courses[key].name + '</p>';
+        outPer += '<p>' + data.courses[key].description + '</p>';
         outPer += '<p>' + data.courses[key].points+ '</p>';
         outPer += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outPer += '</div>';
@@ -47,6 +48,7 @@ function coursesOut(data) {
         outPak += '<div class="ydinopinnot"  id="'+ courseID + '">';
         //outPak += '<p>' + 'ydinopinnot' + '</p>';
         outPak += '<p>' + data.courses[key].name + '</p>';
+        outPak += '<p>' + data.courses[key].description + '</p>';
         outPak += '<p>' + data.courses[key].points + '</p>';
         outPak += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outPak += '</div>';
@@ -58,6 +60,7 @@ function coursesOut(data) {
         outVal += '<div class="valinnaiset"  id="'+ courseID + '">';
         //   outVal += '<p>' + 'valinnaiset' + '</p>';
         outVal += '<p>' + data.courses[key].name + '</p>';
+        outVal += '<p>' + data.courses[key].description + '</p>';
         outVal += '<p>' + data.courses[key].points + '</p>';
         outVal += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outVal += '</div>';
