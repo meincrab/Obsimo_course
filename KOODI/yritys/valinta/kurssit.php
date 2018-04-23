@@ -52,17 +52,17 @@ else {
         </div>
       <div class="submit"> 
         <form id="dataToPhp" name="dataToPhp" method="post" action="../valinta/php/addCourses.php">
-		<b> Valitse suuntautuminen jolle suosittelet kursseja: </b>
+		<!-- <b> Valitse suuntautuminen jolle suosittelet kursseja: </b>
         <select name="suuntautuminen">
             <option value="Kyberturvallisuus">Kyberturvallisuus</option>
             <option value="Mediatekniikka">Mediatekniikka</option>
             <option value="Ohjelmistotekniikka">Ohjelmistotekniikka</option>
             <option value="Tietoverkkotekniikka">Tietoverkkotekniikka</option>
-        </select> 
+        </select> -->
         <input type="hidden" name="pickedCourses" id="pickedCourses" value="">
-        
+        <!--
         <textarea name="palaute" cols=40 rows="10"></textarea>
-        
+        -->
         <a href="#" onclick="setValue();" id="kurssienLisays">Lisää kurssit</a>
       </form>
       </div>
