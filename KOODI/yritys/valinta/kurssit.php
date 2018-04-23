@@ -52,7 +52,7 @@ else {
         </div>
       <div class="submit"> 
         <form id="dataToPhp" name="dataToPhp" method="post" action="../valinta/php/addCourses.php">
-		<!-- <b> Valitse suuntautuminen jolle suosittelet kursseja: </b>
+		<b> Valitse suuntautuminen jolle suosittelet kursseja: </b>
         <select name="suuntautuminen">
             <option value="Kyberturvallisuus">Kyberturvallisuus</option>
             <option value="Mediatekniikka">Mediatekniikka</option>
