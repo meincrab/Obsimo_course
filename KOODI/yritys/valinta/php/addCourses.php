@@ -16,8 +16,16 @@ if(!isset($_SESSION['login_user'])) {
       $kayttaja = $_SESSION['login_user'];
       //echo ($kayttaja);
 	  // pitää korjata
-	  // $palaute = htmlspecialchars($_POST['palaute']);
+	  $palaute = htmlspecialchars($_POST['palaute']);
       //
+	  $query = mysqli_query($db, "SELECT Palaute FROM Yritys WHERE idYritys='$kayttaja'");
+	  $numOfRows = mysqli_num_rows($query);
+	  if ($numOfRows != 0) {
+        $mySqlDel = "DELETE Palaute FROM Yritys WHERE idYritys = '$kayttaja'";
+        mysqli_query($db, $mySqlDel);
+      }
+	    $mySqlC = "UPDATE Yritys SET Palaute = '$palaute' WHERE idYritys = '$kayttaja'";
+	  
       $query = mysqli_query($db, "SELECT * FROM Suositus WHERE idYritys='$kayttaja'");
       $numOfRows = mysqli_num_rows($query);
       //echo $numOfRows;
