@@ -23,7 +23,7 @@ else {
   <body>
     <nav>
       <div id="welcome">
-      Welcome: user, <span><?php echo $_SESSION['login_user'] ?> </span> to assignment schedule. The time is <?php echo date('h:i:sa'); ?>
+      Welcome! Current time: <?php echo date('h:i:sa'); ?>
       <a href="logout.php">Logout</a>
       </div>
     </nav>
@@ -58,7 +58,7 @@ else {
             <option value="Mediatekniikka">Mediatekniikka</option>
             <option value="Ohjelmistotekniikka">Ohjelmistotekniikka</option>
             <option value="Tietoverkkotekniikka">Tietoverkkotekniikka</option>
-        </select> -->
+        </select> 
         <input type="hidden" name="pickedCourses" id="pickedCourses" value="">
         
         <textarea name="palaute" cols=40 rows="10"></textarea>
