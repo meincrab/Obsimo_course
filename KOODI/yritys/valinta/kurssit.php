@@ -60,7 +60,7 @@ else {
             <option value="Tietoverkkotekniikka">Tietoverkkotekniikka</option>
         </select> 
         <input type="hidden" name="pickedCourses" id="pickedCourses" value="">
-        <b> Suosittele uutta kurssia / vapaa palaute. </b>
+        <br><b> Suosittele uutta kurssia / vapaa palaute. </b><br>
         <textarea name="palaute" cols=40 rows="10"></textarea>
         
         <a href="#" onclick="setValue();" id="kurssienLisays">Lisää kurssit</a>
