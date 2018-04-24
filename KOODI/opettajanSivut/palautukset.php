@@ -87,7 +87,7 @@ function showFeedbacks(d) {
             </div>
 			<div id="generoiUrl" class="grid_3">
 			<form method="post" action="luoUrl.php">
-						<h2>Tiedot</h2>
+						<h2>Generoi yritykselle linkki</h2>
 						<p>
 							Yrityksen id: <input type="text" size="40" name="nimi"><br>
 						</p>    
