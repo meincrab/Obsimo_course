@@ -74,19 +74,8 @@ function showFeedbacks(d) {
             <div class="hr grid_3 clearfix quicknavhr">&nbsp;</div>
         
              <div class="grid_3" style="margin-top: 50px">
-                <h2>YRITYKSET</h2>
-                <div class="hr dotted clearfix" style="margin-top: -10px">&nbsp;</div>
-            </div>
-            
-            <div id="quicknav" class="grid_3">
-                <?php
-                    printFirms($db, $user);
-                ?>
-            </div>
-            <div id="feedback" class="grid_3">
-            </div>
-			<div id="generoiUrl" class="grid_3">
-			<form method="post" action="luoUrl.php">
+                <div id="generoiUrl" class="grid_3">
+			     <form method="post" action="luoUrl.php">
 						<h2>Generoi yritykselle linkki</h2>
 						<p>
 							Yrityksen id: <input type="text" size="40" name="nimi"><br>
@@ -94,8 +83,22 @@ function showFeedbacks(d) {
 						<p>
 							<input type="submit" name="generate_url" value="Generoi URL">
 						</p>
-				</form>
+				 </form>
+                </div>
+                <div class="hr dotted clearfix" style="margin-top: -10px">&nbsp;</div>
             </div>
+            
+            <div id="quicknav" class="grid_3">
+                <div id="groups" class="grid_4">
+                    <h1> Yritykset: </h1>
+                    <?php
+                        printFirms($db, $user);
+                    ?>
+                </div>
+                <div id="feedback" class="grid_php" style="margin-left:100px">
+                </div>
+            </div>
+			
             
 		  <!-- Footer -->
             <div class="hr grid_3 clearfix" style="margin-top: 75%">&nbsp;</div>

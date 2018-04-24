@@ -1,12 +1,11 @@
 <?php
 include("../config.php");
 session_start();
-$user = $_SESSION['login_user'];
 $groups = [];
 
 
 //printing result of sql request
-function printFirms($db, $user) {
+function printFirms($db) {
      $sql = <<<SQLEND
     SELECT Nimi, idYritys from Yritys 
 SQLEND;
@@ -57,7 +56,7 @@ function showFeedbacks(d) {
             <ul id="navigaatio" class="grid_2">
                 
                 <li><a href="palautukset.php"><span class="meta">Yrityksien palautukset</span><br />Palautukset</a></li>
-                <li><a href="valitut/opintosuunnitelmat.php"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
+                <li><a href="valitut/opintosuunnitelma.php"><span class="meta">Opiskelijoiden opintosuunnitelmat</span><br />Opintosuunnitelmat</a></li>
                 <li><a href="opiskelija.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
             </ul>
                       
@@ -74,17 +73,20 @@ function showFeedbacks(d) {
             <div class="hr grid_3 clearfix quicknavhr">&nbsp;</div>
         
              <div class="grid_3" style="margin-top: 50px">
-                <h2>YRITYKSET</h2>
                 <div class="hr dotted clearfix" style="margin-top: -10px">&nbsp;</div>
             </div>
             
             <div id="quicknav" class="grid_3">
-                <?php
-                    printFirms($db, $user);
-                ?>
+                <div id="groups" class="grid_4">
+                    <h1> Yritykset: </h1>
+                    <?php
+                        printFirms($db);
+                    ?>
+                </div>
+                <div id="feedback" class="grid_php" style="margin-left:100px">
+                </div>
             </div>
-            <div id="feedback" class="grid_3">
-            </div>
+			
             
 		  <!-- Footer -->
             <div class="hr grid_3 clearfix" style="margin-top: 75%">&nbsp;</div>
@@ -103,3 +105,13 @@ function showFeedbacks(d) {
 
 
 </html>
+
+<?php
+
+if ($_POST['action'] == "Submit Form") {
+    header("Location: http://" . $_SERVER['HTTP_HOST']
+                                    . dirname($_SERVER['PHP_SELF']) . '/'
+                                    . "opettaja.php");
+}
+
+?>

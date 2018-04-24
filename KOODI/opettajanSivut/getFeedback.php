@@ -20,14 +20,15 @@ SQLEND;
     $result = mysqli_query($db, $sql);
     $result2 = mysqli_query($db, $sql2);
     $result3 = mysqli_query($db, $sql3);
-    echo "<h2> Kurssit: </h2>";
-    echo "<table>";
+    echo "<h1> Kurssit: </h1>";
+    echo "<table id='t_courses'>";
     while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
         echo "<tr><td>{$row['Nimi']}</td><td>{$row['Opintopisteet']}</td></tr>";
     }
-    echo "</table>";
     $row = mysqli_fetch_array($result2,MYSQLI_ASSOC);
-    echo "<p> Opintopisteet yhdeessä: {$row['sum(Opintopisteet)']} </p>";
+    echo "<tr><td><b> Opintopisteet yhdeessä </b></td><td> {$row['sum(Opintopisteet)']} </td></tr>";
+    echo "</table><hr>";
+    
     $row = mysqli_fetch_array($result3,MYSQLI_ASSOC);
-    echo "<p> Palaute: {$row['Palaute']} </p>";
+    echo "<p><b> Palaute:</b> {$row['Palaute']} </p>";
 ?>

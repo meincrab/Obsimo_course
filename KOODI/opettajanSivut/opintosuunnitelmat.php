@@ -13,9 +13,9 @@ if (isset($_POST['save']))
     UPDATE Opiskelija SET OpettajanPalaute = '$_POST[feedback]' WHERE idTunnus = '$q'
 SQLEND;
     if(mysqli_query($db, $sql)){
-    $message = "Records inserted successfully.";
+    $message = "Palaute on talennettu.";
     } else{
-        $message = "ERROR: Could not able to execute $sql. " . mysqli_error($db);
+        $message = "ERROR";
     }
 }
 

@@ -24,7 +24,7 @@ else {
     <nav>
       <div id="welcome">
       Welcome: user, <span><?php echo $_SESSION['login_user'] ?> </span> to assignment schedule. The time is <?php echo date('h:i:sa'); ?>
-      <a href="logout.php">Logout</a>
+      <a href="../logout.php">Logout</a>
       </div>
     </nav>
 
