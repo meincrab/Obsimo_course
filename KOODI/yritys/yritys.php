@@ -42,7 +42,7 @@ if ($_POST['action'] == "Submit Form") {
 
             <!-- Otsikko -->
            
-            <p class="grid_3">TÄHÄN KUVAUS PALVELUSTA JA PERUS KÄYTTÖOHJEET</p>
+            <p class="grid_3">Tervetuloa.</p>
             
             <div class="hr grid_3 clearfix quicknavhr">&nbsp;</div>
 
