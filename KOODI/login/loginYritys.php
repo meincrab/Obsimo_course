@@ -44,7 +44,7 @@
 	
       <div align = "center">
          <div style = "width:300px; border: solid 1px #333333; " align = "left">
-            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Testikirjautuminen Yrityksille</b></div>
+            <div style = "background-color:#333333; color:#FFFFFF; padding:3px;"><b>Kirjautuminen Yrityksille</b></div>
 				
             <div style = "margin:30px">
                

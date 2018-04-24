@@ -15,7 +15,7 @@
 				<form method="post" action="luoUrl.php">
 						<h2>Tiedot</h2>
 						<p>
-							Yrityksen nimi: <input type="text" size="40" name="nimi"><br>
+							Yrityksen id: <input type="text" size="40" name="nimi"><br>
 						</p>    
 						<p>
 							<input type="submit" name="generate_url" value="Generoi URL">
@@ -33,12 +33,20 @@
             
             
         </div>
-        
-        
-        </form>  
+    
     </body>
 
 
 </html>
+<?php
 
+if ($_POST['action'] == "Submit Form") {
+    $_SESSION['user'] = '';
+    session_destroy();
+    header("Location: http://" . $_SERVER['HTTP_HOST']
+                                    . dirname($_SERVER['PHP_SELF']) . '/'
+                                    . "../index.html");
+}
+
+?>
 

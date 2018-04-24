@@ -29,7 +29,7 @@ if ($_POST['action'] == "Submit Form") {
 			<!-- nav -->
 			<ul id="navigaatio" class="grid_2">
 				
-				<li><a href="palautukset.php"><span class="meta">Poistu</span><br />Poistu</a></li>
+				<li><a href="../index.html"><span class="meta">Poistu</span><br />Poistu</a></li>
 				<li><a href="ohjeet.php"><span class="meta">Tarkemmat ohjeet</span><br />Ojeet</a></li>
 				<li><a href="yritys.php" class="current"><span class="meta">Kotisivu</span><br />Alku</a></li>
 			   

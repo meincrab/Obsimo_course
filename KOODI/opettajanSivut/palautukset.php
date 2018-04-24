@@ -85,6 +85,17 @@ function showFeedbacks(d) {
             </div>
             <div id="feedback" class="grid_3">
             </div>
+			<div id="generoiUrl" class="grid_3">
+			<form method="post" action="luoUrl.php">
+						<h2>Tiedot</h2>
+						<p>
+							Yrityksen id: <input type="text" size="40" name="nimi"><br>
+						</p>    
+						<p>
+							<input type="submit" name="generate_url" value="Generoi URL">
+						</p>
+				</form>
+            </div>
             
 		  <!-- Footer -->
             <div class="hr grid_3 clearfix" style="margin-top: 75%">&nbsp;</div>
@@ -103,3 +114,13 @@ function showFeedbacks(d) {
 
 
 </html>
+
+<?php
+
+if ($_POST['action'] == "Submit Form") {
+    header("Location: http://" . $_SERVER['HTTP_HOST']
+                                    . dirname($_SERVER['PHP_SELF']) . '/'
+                                    . "opettaja.php");
+}
+
+?>
