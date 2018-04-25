@@ -57,7 +57,7 @@ session_start();
 					<p style="text-align:center;"><img alt="yrutykset" src="../images/yritykset.png" /></p>
 
 			</a>
-            <a class="quicknavgrid_4 quicknav" href="palautukset.php">
+            <a class="quicknavgrid_4 quicknav">
                 <h4 class="title ">Poistu</h4>
 				         <p>Poistu</p>
                  <input type="image" name="logout" src="../images/logout.png">

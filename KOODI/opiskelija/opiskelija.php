@@ -64,7 +64,7 @@ if ($_POST['action'] == "Submit Form") {
 					<p style="text-align:center;"><img alt="yrutykset" src="../images/books.png" /></p>
 
 			</a>
-            <a class="quicknavgrid_4 quicknav" href="palautukset.php">
+            <a class="quicknavgrid_4 quicknav">
                 <h4 class="title ">Kirjaituminen ulos</h4>
 				         <p>Tästä voit kirjaitua ulos</p>
                  <input type="image" name="logout" src="../images/logout.png">
