@@ -44,7 +44,7 @@ function coursesOut(data) {
           outPer +=  '<option value="' + lukukausi[i] + '">' + lukukausi[i] + '</option>';
         }
         outPer += '</select>';
-        outPer += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
+        outPer += '<button class="add-to-cart" name="add" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outPer += '</div>';
       }
       else if (data.courses[key].category_uuid == id2 ) {
@@ -60,7 +60,7 @@ function coursesOut(data) {
           outPak +=  '<option value="' + lukukausi[i] + '">' + lukukausi[i] + '</option>';
         }
         outPak += '</select>';
-        outPak += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
+        outPak += '<button class="add-to-cart" name="add" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outPak += '</div>';
       }
       //Valinnaiset
@@ -76,7 +76,7 @@ function coursesOut(data) {
           outVal +=  '<option value="' + lukukausi[i] + '">' + lukukausi[i] + '</option>';
         }
         outVal += '</select>';
-        outVal += '<button class="add-to-cart" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
+        outVal += '<button class="add-to-cart" name="add" data-id="'+ dataID +'">'+ "Add Course" + '</button>';
         outVal += '</div>';
       }
     };
