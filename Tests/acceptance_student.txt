@@ -1,0 +1,24 @@
+*** Settings ***
+Documentation     A test suite which contains acceptance tests for student
+
+Resource          resources.robot
+Test Setup		  Open browser main page
+Test Teardown     Close Browser
+
+*** Keywords ***
+
+Student chooses courses
+	Click Link	login/loginOpiskelija.php
+	Wait Until Page Contains	Kirjautuminen opiskelijoille
+	Input Username    K111
+    Input Password    sala123
+    Submit Credentials
+	Wait Until Page Contains	OBSIMO OPISKELIJAN SIVUT
+	Click Link	valinta/kurssit.php
+	Wait Until Page Contains	Welcome: user
+	Click Button	name=add
+	
+*** Test Cases ***
+Student choosing courses should succeed
+	Student chooses courses
+	

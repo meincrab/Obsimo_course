@@ -1,0 +1,73 @@
+*** Settings ***
+Documentation		A resource file with reusable keywords and variables.
+Library           	Selenium2Library
+
+*** Variables ***
+${BROWSER}      firefox 
+${BROWSER2}     Chrome
+${BROWSER3}     Edge
+${BROWSER4}     Safari
+${URL}			http://167.99.85.3/gg/KOODI/index.html
+
+*** Keywords ***
+
+Open Browser main page
+    Open Browser    ${URL}    ${BROWSER}
+	Wait Until Page Contains	Tervetuloa OBSIMO palveluun!
+
+Open Browser main page Chrome
+    Open Browser    ${URL}    ${BROWSER2}
+	Wait Until Page Contains	Tervetuloa OBSIMO palveluun!
+
+Open Browser main page Edge
+    Open Browser    ${URL}    ${BROWSER3}
+	Wait Until Page Contains	Tervetuloa OBSIMO palveluun!
+	
+Open Browser main page Safari
+    Open Browser    ${URL}    ${BROWSER4}
+	Wait Until Page Contains	Tervetuloa OBSIMO palveluun!
+
+Submit Credentials
+    Click Button    login
+	
+Input Username
+    [Arguments]    ${username}
+    Input Text    username    ${username}
+
+Input Password
+    [Arguments]    ${password}
+    Input Text    password    ${password}
+	
+Test Browser
+	Click Link	login/loginOpiskelija.php
+	Wait Until Page Contains	Kirjautuminen opiskelijoille
+	Input Username    K111
+    Input Password    sala123
+    Submit Credentials
+	Wait Until Page Contains	OBSIMO OPISKELIJAN SIVUT
+	Click Link	valitut/opintosuunnitelma.php
+	Wait Until Page Contains	MINUN OPINTOSUUNNITELMAN SEURANTA
+	Click Link	../opiskelija.php
+	Wait Until Page Contains	OBSIMO OPISKELIJAN SIVUT
+	Click Button	logout
+	Wait Until Page Contains	Tervetuloa OBSIMO palveluun!
+	Click Link	login/loginOpettaja.php
+	Wait Until Page Contains	Kirjautuminen opettajille
+	Input Username    OP1
+    Input Password    opesala1
+    Submit Credentials
+	Wait Until Page Contains	OBSIMO OPETTAJAN SIVUT
+	Click Link	opintosuunnitelmat.php
+	Wait Until Page Contains	Ryhmät
+	Click Link	TTV16S3
+	Wait Until Page Contains	Students
+	Click Link	K111
+	Wait Until Page Contains	Valitut kurssit
+	Click Link	palautukset.php
+	Wait Until Page Contains	Yritykset
+	Click Link	test
+	Wait Until Page Contains	Kurssit
+	Click Link	opettaja.php
+	Wait Until Page Contains	OBSIMO OPETTAJAN SIVUT
+	Click Button	logout
+	Wait Until Page Contains	Tervetuloa OBSIMO palveluun!
