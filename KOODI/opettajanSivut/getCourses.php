@@ -38,7 +38,7 @@ SQLEND;
         }
         echo "</table>";
     }
-    $row = mysqli_fetch_array($result2,MYSQLI_ASSOC);
+    //$row = mysqli_fetch_array($result2,MYSQLI_ASSOC);
     //echo "<tr><td><b>Opintopisteet yhdeessä</b></td><td><b>{$row['sum(Opintopisteet)']}</b></td></table>";
     $sql = <<<SQLEND
         SELECT sum(Opintopisteet) FROM Kurssi INNER JOIN ValitutJaksot WHERE Kurssi.idKurssi=ValitutJaksot.idKurssi AND idTunnus = '$q';

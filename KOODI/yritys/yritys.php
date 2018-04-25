@@ -1,13 +1,7 @@
 <?php
 session_start();
 
-if ($_POST['action'] == "Submit Form") {
-    $_SESSION['login_user'] = '';
-    session_destroy();
-    header("Location: http://" . $_SERVER['HTTP_HOST']
-                                    . dirname($_SERVER['PHP_SELF']) . '/'
-                                    . ".../index.html");
-}
+
 
 ?>
 
