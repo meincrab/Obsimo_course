@@ -13,8 +13,6 @@
       header("Location: http://" . $_SERVER['HTTP_HOST']
                                     . dirname($_SERVER['PHP_SELF']) . '/'
                                     . "../yritys/yritys.php");
-      }else {
-         $error = "Your Login Name or Password is invalid";
       }
 	  
 ?>

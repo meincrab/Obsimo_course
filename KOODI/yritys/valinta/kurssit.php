@@ -24,7 +24,7 @@ else {
     <nav>
       <div id="welcome">
       Welcome! Current time: <?php echo date('h:i:sa'); ?>
-      <a href="logout.php">Logout</a>
+      <a href="../logout.php">Logout</a>
       </div>
     </nav>
 
