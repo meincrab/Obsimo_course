@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.2 (Python 3.6.4 on win32)" generated="20180425 16:07:45.894">
+<suite id="s1" name="Acceptance Student" source="C:\Users\Katia\Desktop\Tests\acceptance_student.robot">
+<test id="s1-t1" name="Student choosing courses should succeed">
+<kw name="Open Browser main page" library="resources" type="setup">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180425 16:07:46.029" level="INFO">Opening browser 'firefox' to base url 'http://167.99.85.3/gg/KOODI/index.html'.</msg>
+<status status="PASS" starttime="20180425 16:07:46.029" endtime="20180425 16:07:51.062"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Tervetuloa OBSIMO palveluun!</arg>
+</arguments>
+<status status="PASS" starttime="20180425 16:07:51.062" endtime="20180425 16:07:51.075"></status>
+</kw>
+<status status="PASS" starttime="20180425 16:07:46.029" endtime="20180425 16:07:51.075"></status>
+</kw>
+<kw name="Student chooses courses">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>login/loginOpiskelija.php</arg>
+</arguments>
+<msg timestamp="20180425 16:07:51.076" level="INFO">Clicking link 'login/loginOpiskelija.php'.</msg>
+<status status="PASS" starttime="20180425 16:07:51.076" endtime="20180425 16:07:51.167"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Kirjautuminen opiskelijoille</arg>
+</arguments>
+<status status="PASS" starttime="20180425 16:07:51.167" endtime="20180425 16:07:51.174"></status>
+</kw>
+<kw name="Input Username" library="resources">
+<arguments>
+<arg>K111</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>username</arg>
+<arg>${username}</arg>
+</arguments>
+<msg timestamp="20180425 16:07:51.175" level="INFO">Typing text 'K111' into text field 'username'.</msg>
+<status status="PASS" starttime="20180425 16:07:51.175" endtime="20180425 16:07:51.196"></status>
+</kw>
+<status status="PASS" starttime="20180425 16:07:51.174" endtime="20180425 16:07:51.196"></status>
+</kw>
+<kw name="Input Password" library="resources">
+<arguments>
+<arg>sala123</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>${password}</arg>
+</arguments>
+<msg timestamp="20180425 16:07:51.196" level="INFO">Typing text 'sala123' into text field 'password'.</msg>
+<status status="PASS" starttime="20180425 16:07:51.196" endtime="20180425 16:07:51.216"></status>
+</kw>
+<status status="PASS" starttime="20180425 16:07:51.196" endtime="20180425 16:07:51.216"></status>
+</kw>
+<kw name="Submit Credentials" library="resources">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>login</arg>
+</arguments>
+<msg timestamp="20180425 16:07:51.217" level="INFO">Clicking button 'login'.</msg>
+<status status="PASS" starttime="20180425 16:07:51.217" endtime="20180425 16:07:51.594"></status>
+</kw>
+<status status="PASS" starttime="20180425 16:07:51.216" endtime="20180425 16:07:51.594"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>OBSIMO OPISKELIJAN SIVUT</arg>
+</arguments>
+<status status="PASS" starttime="20180425 16:07:51.594" endtime="20180425 16:07:51.599"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by ``locator``.</doc>
+<arguments>
+<arg>valinta/kurssit.php</arg>
+</arguments>
+<msg timestamp="20180425 16:07:51.599" level="INFO">Clicking link 'valinta/kurssit.php'.</msg>
+<status status="PASS" starttime="20180425 16:07:51.599" endtime="20180425 16:07:51.857"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until ``text`` appears on current page.</doc>
+<arguments>
+<arg>Welcome: user</arg>
+</arguments>
+<status status="PASS" starttime="20180425 16:07:51.858" endtime="20180425 16:07:51.862"></status>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>name=add</arg>
+</arguments>
+<msg timestamp="20180425 16:07:51.862" level="INFO">Clicking button 'name=add'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180425 16:07:51.916" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20180425 16:07:51.871" endtime="20180425 16:07:51.916"></status>
+</kw>
+<msg timestamp="20180425 16:07:51.918" level="FAIL">Button with locator 'name=add' not found.</msg>
+<status status="FAIL" starttime="20180425 16:07:51.862" endtime="20180425 16:07:51.918"></status>
+</kw>
+<status status="FAIL" starttime="20180425 16:07:51.076" endtime="20180425 16:07:51.918"></status>
+</kw>
+<kw name="Close Browser" library="Selenium2Library" type="teardown">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20180425 16:07:51.919" endtime="20180425 16:07:52.431"></status>
+</kw>
+<status status="FAIL" starttime="20180425 16:07:46.028" endtime="20180425 16:07:52.432" critical="yes">Button with locator 'name=add' not found.</status>
+</test>
+<doc>A test suite which contains acceptance tests for student</doc>
+<status status="FAIL" starttime="20180425 16:07:45.895" endtime="20180425 16:07:52.434"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Acceptance Student">Acceptance Student</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

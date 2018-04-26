@@ -1,13 +1,11 @@
-Tässä on testit, jotka onnistui tekemään.
-
-Tuli virhe, että en pysty klikkata painikke, sen kautta en pystynyt tehdä opiskelijan ja yrityksen testit.
-
-Kokeilin klikkata sitä niin:
-Click Element   xpath=//*[@id="1"]/button
-Click Button    xpath=//*[@id="1"]/button
-Click Element   name=add
-Click Button    name=add
-Click Element   add
-Click Button    add
-
-Vain antaa virhe, että ei löytänyt. En pysty tehdä monta testjä, koska siellä on tämä painikke.
+==============================================================================
+Firm Functional :: A test suite which contains functional tests for firm
+==============================================================================
+Firm chooses courses should succeed                                   | PASS |
+------------------------------------------------------------------------------
+Firm writes feedback should succeed                                   | PASS |
+------------------------------------------------------------------------------
+Firm Functional :: A test suite which contains functional tests fo... | PASS |
+2 critical tests, 2 passed, 0 failed
+2 tests total, 2 passed, 0 failed
+==============================================================================
