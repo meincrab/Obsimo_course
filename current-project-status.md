@@ -22,3 +22,9 @@
 
 * [Kotisivu](http://prjteam-g.pages.labranet.jamk.fi/gg/)
 * [mock-up](https://ninjamock.com/s/RHBQWRx)
+
+
+### Testit
+
+[Robotframework](https://gitlab.labranet.jamk.fi/PRJTEAM-G/gg/tree/master/Tests)
+![](https://gitlab.labranet.jamk.fi/PRJTEAM-G/gg/blob/master/TestReport/TestlinkChart.JPG)
