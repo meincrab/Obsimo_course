@@ -2,14 +2,13 @@
 
 * Päivämäärä: 10.4.2018
 * Ryhmä: gg
-* Tehdyt työtunnit: 335h
-* Tämän hetkinen lasku: 16750€ 
+* Tehdyt työtunnit: 464.5h
+* Tämän hetkinen lasku: 23225€ 
 
 
 # Miten homma etenee / Current Progress
 
-* Etappi 1 asiat tehty.
-* Etappi 2:ssa asiat korjattu.
+* Projekti valmis
 
 ## Ongelmakohdat / Problems ahead 
 
@@ -17,7 +16,7 @@
 
 ## Mitä seuraavaksi / What next
 
-* Koodia, testausta, kyyneliä ja verta.
+* Testausta, kyyneliä ja verta.
 
 ### Tärkeitä linkkejä / Useful links 
 
