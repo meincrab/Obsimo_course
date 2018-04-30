@@ -24,7 +24,9 @@
 * [mock-up](https://ninjamock.com/s/RHBQWRx)
 * [Wiki](https://gitlab.labranet.jamk.fi/PRJTEAM-G/gg/wikis/home)
 
+### Loppuraportti
 
+[Loppuraportti](https://gitlab.labranet.jamk.fi/PRJTEAM-G/gg/wikis/loppuraportti)
 
 ### Testit
 
